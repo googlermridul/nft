@@ -469,6 +469,49 @@ i {
           box-shadow: none;
 }
 
+.testimonial-section {
+  padding: 100px 0;
+}
+
+.testimonial-section .review-box {
+  background: rgba(100, 69, 237, 0.2);
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  bottom: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  text-align: center;
+  padding: 20px;
+}
+
+.testimonial-section .review-box .img-box {
+  margin-bottom: 30px;
+}
+
+.testimonial-section .review-box .img-box img {
+  border-radius: 115px;
+  width: 120px;
+  height: 120px;
+  margin: auto;
+}
+
+.testimonial-section .review-box .text-box span {
+  text-transform: capitalize;
+  color: #b2bac2;
+  position: relative;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.testimonial-section .review-box .fa-quote-right {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  font-size: 24px;
+  color: #e039fd;
+}
+
 .blog-section {
   padding: 100px 0;
 }
@@ -673,6 +716,7 @@ i {
 
 .connect-wallet-modal {
   background: url(../img/body-bg.png);
+  background-position: bottom;
   border-radius: 20px;
   padding: 20px;
   text-align: center;
@@ -682,11 +726,10 @@ i {
   position: absolute;
   top: 20px;
   right: 20px;
-  text-shadow: 0 4px 7px #000;
 }
 
 .connect-wallet-modal .dismiss-btn i {
-  color: #e039fd;
+  color: #b2bac2;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -697,9 +740,8 @@ i {
 
 .connect-wallet-modal h5.header {
   font-weight: 400;
-  color: #e039fd;
-  margin-bottom: 30px;
-  font-size: 18px;
+  color: #fff;
+  margin-bottom: 20px;
   font-family: "AweSomE JouRneY", sans-serif;
 }
 
@@ -707,11 +749,26 @@ i {
   border: 5px solid rgba(100, 69, 237, 0.2);
   border-radius: 15px;
   padding: 20px;
+  margin-bottom: 15px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
 .connect-wallet-modal .box img {
   width: 50px;
+}
+
+.banner {
+  padding: 141px 0 100px 0;
+  background-image: url(../img/nft-bg4.png);
+  background-position: center;
+}
+
+.banner h2 {
+  margin-bottom: 0;
+}
+
+.contact-section {
+  padding: 100px;
 }
 /*# sourceMappingURL=style.css.map */

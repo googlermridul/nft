@@ -31,25 +31,6 @@ for (const element of navItem) {
 }
 
 $(document).ready(function () {
-   $(".members").owlCarousel({
-      loop: true,
-      margin: 25,
-      nav: false,
-      dots: false,
-      autoplay: true,
-      autoplayTimeout: 3000,
-      responsive: {
-         0: {
-            items: 1,
-         },
-         768: {
-            items: 2,
-         },
-         992: {
-            items: 4,
-         },
-      },
-   });
    $(".testimonials").owlCarousel({
       loop: true,
       margin: 25,
@@ -62,10 +43,10 @@ $(document).ready(function () {
             items: 1,
          },
          768: {
-            items: 2,
+            items: 1,
          },
          992: {
-            items: 3,
+            items: 2,
          },
       },
    });

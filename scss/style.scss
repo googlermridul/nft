@@ -179,29 +179,6 @@ i {
          }
       }
    }
-   // .img-box {
-   //    text-align: right;
-   //    img {
-   //       border-radius: 15px;
-   //    }
-   //    .img {
-   //       // border: 10px solid transparent;
-   //       // outline: 5px solid rgba(100, 69, 237, 0.2);
-   //       background: rgba(100, 69, 237, 0.2);
-   //       padding: 20px;
-   //       border-radius: 20px;
-   //       position: relative;
-   //       bottom: 0;
-   //       transition: 0.4s;
-   //       &:hover {
-   //          bottom: 10px;
-   //       }
-   //    }
-   //    .img2,
-   //    .img4 {
-   //       margin-top: 40px;
-   //    }
-   // }
 }
 
 // live auction
@@ -441,6 +418,56 @@ i {
    }
 }
 
+// testimonial section
+.testimonial-section {
+   padding: 100px 0;
+   .review-box {
+      background: rgba(100, 69, 237, 0.2);
+      border-radius: 20px;
+      overflow: hidden;
+      position: relative;
+      bottom: 0;
+      transition: 0.4s;
+      text-align: center;
+      padding: 20px;
+      .img-box {
+         margin-bottom: 30px;
+
+         img {
+            border-radius: 115px;
+            width: 120px;
+            height: 120px;
+            margin: auto;
+         }
+      }
+      .text-box {
+         span {
+            text-transform: capitalize;
+            color: #b2bac2;
+            position: relative;
+            transition: 0.4s;
+            // left: 30px;
+            // &:before {
+            //    content: "";
+            //    position: absolute;
+            //    width: 15px;
+            //    height: 2px;
+            //    background: #e039fd;
+            //    left: -30px;
+            //    top: 9px;
+            // }
+         }
+      }
+      .fa-quote-right {
+         position: absolute;
+         bottom: 30px;
+         right: 30px;
+         font-size: 24px;
+         color: #e039fd;
+      }
+   }
+}
+
 // blog section
 .blog-section {
    padding: 100px 0;
@@ -611,8 +638,10 @@ i {
    }
 }
 
+// connect wallet modal
 .connect-wallet-modal {
    background: url(../img/body-bg.png);
+   background-position: bottom;
    border-radius: 20px;
    padding: 20px;
    text-align: center;
@@ -620,9 +649,8 @@ i {
       position: absolute;
       top: 20px;
       right: 20px;
-      text-shadow: 0 4px 7px #000;
       i {
-         color: #e039fd;
+         color: #b2bac2;
          transition: 0.4s;
          &:hover {
             color: #e039fd;
@@ -631,16 +659,15 @@ i {
    }
    h5.header {
       font-weight: 400;
-      color: #e039fd;
-      margin-bottom: 30px;
-      font-size: 18px;
+      color: #fff;
+      margin-bottom: 20px;
       font-family: "AweSomE JouRneY", sans-serif;
    }
    .box {
       border: 5px solid rgba(100, 69, 237, 0.2);
-      // background: rgba(100, 69, 237, 0.2);
       border-radius: 15px;
       padding: 20px;
+      margin-bottom: 15px;
       transition: 0.4s;
       img {
          width: 50px;
@@ -648,13 +675,17 @@ i {
    }
 }
 
-// @media (min-width: 1400px) {
-//    .container,
-//    .container-lg,
-//    .container-md,
-//    .container-sm,
-//    .container-xl,
-//    .container-xxl {
-//       max-width: 1200px;
-//    }
-// }
+// banner
+.banner {
+   padding: 141px 0 100px 0;
+   background-image: url(../img/nft-bg4.png);
+   background-position: center;
+   h2 {
+      margin-bottom: 0;
+   }
+}
+
+// contact section
+.contact-section {
+   padding: 100px;
+}
