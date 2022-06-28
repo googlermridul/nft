@@ -193,33 +193,6 @@ i {
   font-size: 16px;
 }
 
-.about-section .img-box {
-  text-align: right;
-}
-
-.about-section .img-box img {
-  border-radius: 15px;
-}
-
-.about-section .img-box .img {
-  background: rgba(100, 69, 237, 0.2);
-  padding: 20px;
-  border-radius: 20px;
-  position: relative;
-  bottom: 0;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.about-section .img-box .img:hover {
-  bottom: 10px;
-}
-
-.about-section .img-box .img2,
-.about-section .img-box .img4 {
-  margin-top: 40px;
-}
-
 .live-auction {
   padding: 100px 0;
 }
@@ -457,37 +430,43 @@ i {
   padding: 100px 0;
 }
 
-.faq-section .box {
+.faq-section .accordion-item {
   background: rgba(100, 69, 237, 0.2);
-  padding: 20px;
   border-radius: 20px;
-  position: relative;
-  bottom: 0;
-  text-align: center;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  border: none;
+  margin-bottom: 25px;
 }
 
-.faq-section .box .img-box {
-  margin-bottom: 15px;
-}
-
-.faq-section .box .img-box img {
-  width: 150px;
-  height: 150px;
-}
-
-.faq-section .box:hover {
-  bottom: 10px;
-}
-
-.faq-section .number-count {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  color: rgba(100, 69, 237, 0.2);
+.faq-section .accordion-button {
+  background: none;
+  border-radius: 20px !important;
+  padding: 25px 30px;
+  font-size: 18px;
   font-family: "Urbanist", sans-serif;
-  z-index: 1;
+  font-weight: 700;
+  color: #fff;
+}
+
+.faq-section .accordion-button:focus {
+  z-index: 3;
+  border-color: #86b7fe;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0rem rgba(13, 110, 253, 0.25);
+          box-shadow: 0 0 0 0rem rgba(13, 110, 253, 0.25);
+}
+
+.faq-section .accordion-button::after {
+  background-image: url(../img/down-arrow.png);
+}
+
+.faq-section .accordion-body {
+  padding: 0px 30px 30px 30px;
+}
+
+.faq-section .accordion-button:not(.collapsed) {
+  color: #e039fd;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .blog-section {
