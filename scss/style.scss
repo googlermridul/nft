@@ -431,10 +431,9 @@ i {
       text-align: center;
       padding: 20px;
       .img-box {
-         margin-bottom: 30px;
-
+         margin-bottom: 15px;
          img {
-            border-radius: 115px;
+            border-radius: 15px;
             width: 120px;
             height: 120px;
             margin: auto;
@@ -628,6 +627,7 @@ i {
    }
 }
 
+// scroll up
 .scroll-up {
    position: fixed;
    bottom: 50px;
@@ -640,6 +640,31 @@ i {
       border-radius: 10px;
       text-align: center;
       padding-top: 16px;
+   }
+}
+
+// pre loader
+#preloader {
+   background-image: url(../img/body-bg.png);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 100%;
+   height: 100%;
+   position: fixed;
+   top: 0;
+   left: 0;
+   -webkit-transition: 0.4s;
+   transition: 0.4s;
+   z-index: 1100;
+   .loader {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      width: 200px;
    }
 }
 
