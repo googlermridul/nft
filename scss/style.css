@@ -670,4 +670,48 @@ i {
   text-align: center;
   padding-top: 16px;
 }
+
+.connect-wallet-modal {
+  background: url(../img/body-bg.png);
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.connect-wallet-modal .dismiss-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  text-shadow: 0 4px 7px #000;
+}
+
+.connect-wallet-modal .dismiss-btn i {
+  color: #e039fd;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.connect-wallet-modal .dismiss-btn i:hover {
+  color: #e039fd;
+}
+
+.connect-wallet-modal h5.header {
+  font-weight: 400;
+  color: #e039fd;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-family: "AweSomE JouRneY", sans-serif;
+}
+
+.connect-wallet-modal .box {
+  border: 5px solid rgba(100, 69, 237, 0.2);
+  border-radius: 15px;
+  padding: 20px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.connect-wallet-modal .box img {
+  width: 50px;
+}
 /*# sourceMappingURL=style.css.map */

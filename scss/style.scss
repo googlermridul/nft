@@ -611,6 +611,43 @@ i {
    }
 }
 
+.connect-wallet-modal {
+   background: url(../img/body-bg.png);
+   border-radius: 20px;
+   padding: 20px;
+   text-align: center;
+   .dismiss-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      text-shadow: 0 4px 7px #000;
+      i {
+         color: #e039fd;
+         transition: 0.4s;
+         &:hover {
+            color: #e039fd;
+         }
+      }
+   }
+   h5.header {
+      font-weight: 400;
+      color: #e039fd;
+      margin-bottom: 30px;
+      font-size: 18px;
+      font-family: "AweSomE JouRneY", sans-serif;
+   }
+   .box {
+      border: 5px solid rgba(100, 69, 237, 0.2);
+      // background: rgba(100, 69, 237, 0.2);
+      border-radius: 15px;
+      padding: 20px;
+      transition: 0.4s;
+      img {
+         width: 50px;
+      }
+   }
+}
+
 // @media (min-width: 1400px) {
 //    .container,
 //    .container-lg,

@@ -79,12 +79,44 @@
                <button class="search">
                   <i class="fal fa-search"></i>
                </button>
-               <button class="btn-nft">
+               <button
+                  class="btn-nft"
+                  data-bs-toggle="modal"
+                  data-bs-target="#connectWallet"
+               >
                   <i class="fal fa-wallet"></i>Connect wallet
                </button>
             </span>
          </div>
       </nav>
+
+      <!-- connect wallet modal -->
+      <div
+         class="modal fade"
+         id="connectWallet"
+         tabindex="-1"
+         aria-labelledby="connectWalletLabel"
+         aria-hidden="true"
+      >
+         <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content connect-wallet-modal">
+               <h5 class="header">Connect to MetaMask</h5>
+               <button
+                  class="dismiss-btn"
+                  type="button"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+               >
+                  <i class="fal fa-times"></i>
+               </button>
+               <a href="">
+                  <div class="box">
+                     <img src="./img/wallet/wallet1.png" alt="" />
+                  </div>
+               </a>
+            </div>
+         </div>
+      </div>
 
       <!-- home section -->
       <section class="home-section">
