@@ -154,6 +154,7 @@ i {
 }
 
 .home-section .overlay {
+  background: rgba(0, 0, 0, 0.2);
   background-image: url(../img/black-monkey.png);
   background-position: bottom left;
   background-repeat: no-repeat;
@@ -174,6 +175,49 @@ i {
   margin-bottom: 30px;
   font-size: 18px;
   font-family: "AweSomE JouRneY", sans-serif;
+}
+
+.about-section {
+  padding: 100px 0;
+}
+
+.about-section .text-box h2 {
+  margin-bottom: 30px;
+}
+
+.about-section .text-box p {
+  margin-bottom: 50px;
+}
+
+.about-section .text-box .btn-nft i {
+  font-size: 16px;
+}
+
+.about-section .img-box {
+  text-align: right;
+}
+
+.about-section .img-box img {
+  border-radius: 15px;
+}
+
+.about-section .img-box .img {
+  background: rgba(100, 69, 237, 0.2);
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+  bottom: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.about-section .img-box .img:hover {
+  bottom: 10px;
+}
+
+.about-section .img-box .img2,
+.about-section .img-box .img4 {
+  margin-top: 40px;
 }
 
 .live-auction {
@@ -409,6 +453,43 @@ i {
   z-index: 1;
 }
 
+.faq-section {
+  padding: 100px 0;
+}
+
+.faq-section .box {
+  background: rgba(100, 69, 237, 0.2);
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+  bottom: 0;
+  text-align: center;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.faq-section .box .img-box {
+  margin-bottom: 15px;
+}
+
+.faq-section .box .img-box img {
+  width: 150px;
+  height: 150px;
+}
+
+.faq-section .box:hover {
+  bottom: 10px;
+}
+
+.faq-section .number-count {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: rgba(100, 69, 237, 0.2);
+  font-family: "Urbanist", sans-serif;
+  z-index: 1;
+}
+
 .blog-section {
   padding: 100px 0;
 }
@@ -475,6 +556,7 @@ i {
 .footer-section {
   padding: 100px 0 0 0;
   background: rgba(100, 69, 237, 0.2);
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .footer-section .box .navbar-brand {
