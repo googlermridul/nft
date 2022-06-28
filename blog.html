@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="icon" type="image/x-icon" href="./img/fav.png" />
+      <title>NFT | Home</title>
+      <!-- bootstrap 5 -->
+      <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
+      <!-- owl carousel -->
+      <link rel="stylesheet" href="./assets/plugins/owlcarousel/animate.css" />
+      <link
+         rel="stylesheet"
+         href="./assets/plugins/owlcarousel/owl.carousel.min.css"
+      />
+      <link
+         rel="stylesheet"
+         href="./assets/plugins/owlcarousel/owl.theme.default.min.css"
+      />
+      <!-- aos animation -->
+      <link rel="stylesheet" href="./assets/plugins/aos/aos.css" />
+      <!-- fancy box -->
+      <link
+         rel="stylesheet"
+         href="./assets/plugins/fancybox/jquery.fancybox.min.css"
+      />
+      <!-- font awesome 5 -->
+      <script src="./assets/fontawesome/fontawesomepro.js"></script>
+      <!-- custom css -->
+      <link rel="stylesheet" href="./scss/style.css" />
+   </head>
+   <body>
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg fixed-top">
+         <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">NFT</a>
+            <button
+               class="navbar-toggler p-0"
+               type="button"
+               data-bs-toggle="collapse"
+               data-bs-target="#navbarNav"
+               aria-controls="navbarNav"
+               aria-expanded="false"
+               aria-label="Toggle navigation"
+            >
+               <i class="fal fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav mx-auto">
+                  <li class="nav-item">
+                     <a class="nav-link active" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="about.html">about</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="story.html">Roadmap</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="">Team</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="">FAQ</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="blog.html">blog</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="contact.html">contact</a>
+                  </li>
+               </ul>
+            </div>
+            <span class="navbar-text">
+               <button class="search">
+                  <i class="fal fa-search"></i>
+               </button>
+               <button
+                  class="btn-nft"
+                  data-bs-toggle="modal"
+                  data-bs-target="#connectWallet"
+               >
+                  <i class="fal fa-wallet"></i>Connect wallet
+               </button>
+            </span>
+         </div>
+      </nav>
+
+      <!-- pre loader -->
+      <div id="preloader">
+         <img src="./img/slice_airplane.gif" alt="" class="loader" />
+      </div>
+
+      <!-- banner -->
+      <section class="banner">
+         <div class="container">
+            <div class="row">
+               <div class="col">
+                  <div class="header-text text-center">
+                     <h2>get in touch</h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- blog details -->
+      <section class="blog-details">
+         <div class="container">
+            <div class="row gy-5 g-lg-5">
+               <div class="col-lg-8">
+                  <div class="blog-box">
+                     <div class="img-box">
+                        <img
+                           class="img-fluid"
+                           src="./img/blog/blog1.jpg"
+                           alt=""
+                        />
+                     </div>
+                     <div class="text-box">
+                        <div class="date-author">
+                           <span>
+                              <i class="fal fa-clock"></i>20 January 2021
+                           </span>
+                           <span> <i class="fal fa-user"></i>Moderator </span>
+                        </div>
+                        <h5>Top 5 Most Popular NFT Games</h5>
+                        <p>
+                           Lorem ipsum dolor sit amet consectetur adipisicing
+                           elit. Quaerat consequuntur asperiores iure deleniti.
+                           Fugiat maxime pariatur possimus reprehenderit.
+                           Dignissimos atque harum aliquid impedit voluptatibus?
+                           Aperiam quam animi mollitia fugit voluptatum.
+                           <a
+                              class="continue-reading"
+                              data-bs-toggle="collapse"
+                              href="#blog01"
+                              role="button"
+                              aria-expanded="false"
+                              aria-controls="blog01"
+                           >
+                              continue reading
+                           </a>
+                        </p>
+                        <div class="collapse" id="blog01">
+                           <p>
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Quaerat consequuntur asperiores iure
+                              deleniti. Fugiat maxime pariatur possimus
+                              reprehenderit. Dignissimos atque harum aliquid
+                              impedit voluptatibus? Aperiam quam animi mollitia
+                              fugit voluptatum.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="blog-box">
+                     <div class="img-box">
+                        <img
+                           class="img-fluid"
+                           src="./img/blog/blog2.jpg"
+                           alt=""
+                        />
+                     </div>
+                     <div class="text-box">
+                        <div class="date-author">
+                           <span>
+                              <i class="fal fa-clock"></i>20 January 2021
+                           </span>
+                           <span> <i class="fal fa-user"></i>Moderator </span>
+                        </div>
+                        <h5>Updates on Non-Fungible Tokens</h5>
+                        <p>
+                           Lorem ipsum dolor sit amet consectetur adipisicing
+                           elit. Quaerat consequuntur asperiores iure deleniti.
+                           Fugiat maxime pariatur possimus reprehenderit.
+                           Dignissimos atque harum aliquid impedit voluptatibus?
+                           Aperiam quam animi mollitia fugit voluptatum.
+                           <a
+                              class="continue-reading"
+                              data-bs-toggle="collapse"
+                              href="#blog02"
+                              role="button"
+                              aria-expanded="false"
+                              aria-controls="blog02"
+                           >
+                              continue reading
+                           </a>
+                        </p>
+                        <div class="collapse" id="blog02">
+                           <p>
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Quaerat consequuntur asperiores iure
+                              deleniti. Fugiat maxime pariatur possimus
+                              reprehenderit. Dignissimos atque harum aliquid
+                              impedit voluptatibus? Aperiam quam animi mollitia
+                              fugit voluptatum.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="blog-box">
+                     <div class="img-box">
+                        <img
+                           class="img-fluid"
+                           src="./img/blog/blog3.jpg"
+                           alt=""
+                        />
+                     </div>
+                     <div class="text-box">
+                        <div class="date-author">
+                           <span>
+                              <i class="fal fa-clock"></i>20 January 2021
+                           </span>
+                           <span> <i class="fal fa-user"></i>Moderator </span>
+                        </div>
+                        <h5>Everything We're Reading about NFTs</h5>
+                        <p>
+                           Lorem ipsum dolor sit amet consectetur adipisicing
+                           elit. Quaerat consequuntur asperiores iure deleniti.
+                           Fugiat maxime pariatur possimus reprehenderit.
+                           Dignissimos atque harum aliquid impedit voluptatibus?
+                           Aperiam quam animi mollitia fugit voluptatum.
+                           <a
+                              class="continue-reading"
+                              data-bs-toggle="collapse"
+                              href="#blog03"
+                              role="button"
+                              aria-expanded="false"
+                              aria-controls="blog03"
+                           >
+                              continue reading
+                           </a>
+                        </p>
+                        <div class="collapse" id="blog03">
+                           <p>
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Quaerat consequuntur asperiores iure
+                              deleniti. Fugiat maxime pariatur possimus
+                              reprehenderit. Dignissimos atque harum aliquid
+                              impedit voluptatibus? Aperiam quam animi mollitia
+                              fugit voluptatum.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <nav aria-label="Page navigation example">
+                     <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                           <a class="page-link">Previous</a>
+                        </li>
+                        <li class="page-item active">
+                           <a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item">
+                           <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                           <a class="page-link" href="#">3</a>
+                        </li>
+                        <li class="page-item">
+                           <a class="page-link" href="#">Next</a>
+                        </li>
+                     </ul>
+                  </nav>
+               </div>
+               <div class="col-lg-4">
+                  <div class="side-box">
+                     <form action="">
+                        <h5>Search</h5>
+                        <div class="input-group">
+                           <input
+                              type="email"
+                              class="form-control"
+                              placeholder="search"
+                           />
+                           <button><i class="fal fa-search"></i></button>
+                        </div>
+                     </form>
+                  </div>
+                  <div class="side-box">
+                     <h5>categories</h5>
+                     <ul class="links">
+                        <li><a href="">Albums</a></li>
+                        <li><a href="">Dress</a></li>
+                        <li><a href="">Events</a></li>
+                        <li><a href="">Festivals</a></li>
+                     </ul>
+                  </div>
+                  <div class="side-box">
+                     <h5>tags</h5>
+                     <ul class="links">
+                        <li><a href="">Albums</a></li>
+                        <li><a href="">Dress</a></li>
+                        <li><a href="">Events</a></li>
+                        <li><a href="">Festivals</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- blog section -->
+      <div class="blog-section">
+         <div class="container">
+            <div class="row">
+               <div class="col">
+                  <div class="header-text mb-5 text-center">
+                     <h2>Latest News Update</h2>
+                     <p>
+                        Here are a few reasons why you should choose Oction for
+                        sell your NFT
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div class="row g-4">
+               <div class="col-lg-4 col-md-6">
+                  <div class="box">
+                     <div class="img-box">
+                        <img
+                           src="./img/blog/blog1.jpg"
+                           class="img-fluid"
+                           alt=""
+                        />
+                     </div>
+                     <div class="text-box">
+                        <div class="date-author">
+                           <span>
+                              <i class="fal fa-clock"></i>20 January 2021
+                           </span>
+                           <span> <i class="fal fa-user"></i>Moderator </span>
+                        </div>
+                        <h5>Top 5 Most Popular NFT Games</h5>
+                        <p>
+                           Lorem ipsum dolor sit amet consectetur adipisicing
+                           elit Lorem ipsum dolor sit amet.
+                        </p>
+                        <a href="" class="read-more"> Read More</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6">
+                  <div class="box">
+                     <div class="img-box">
+                        <img
+                           src="./img/blog/blog2.jpg"
+                           class="img-fluid"
+                           alt=""
+                        />
+                     </div>
+                     <div class="text-box">
+                        <div class="date-author">
+                           <span>
+                              <i class="fal fa-clock"></i>20 January 2021
+                           </span>
+                           <span> <i class="fal fa-user"></i>Moderator </span>
+                        </div>
+                        <h5>Updates on Non-Fungible Tokens</h5>
+                        <p>
+                           Lorem ipsum dolor sit amet consectetur adipisicing
+                           elit Lorem ipsum dolor sit amet.
+                        </p>
+                        <a href="" class="read-more"> Read More</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6 mx-auto">
+                  <div class="box">
+                     <div class="img-box">
+                        <img
+                           src="./img/blog/blog3.jpg"
+                           class="img-fluid"
+                           alt=""
+                        />
+                     </div>
+                     <div class="text-box">
+                        <div class="date-author">
+                           <span>
+                              <i class="fal fa-clock"></i>20 January 2021
+                           </span>
+                           <span> <i class="fal fa-user"></i>Moderator </span>
+                        </div>
+                        <h5>Everything We're Reading about NFTs</h5>
+                        <p>
+                           Lorem ipsum dolor sit amet consectetur adipisicing
+                           elit Lorem ipsum dolor sit amet.
+                        </p>
+                        <a href="" class="read-more"> Read More</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- footer section -->
+      <footer class="footer-section">
+         <div class="container">
+            <div class="row gy-5 g-md-5">
+               <div class="col-lg-3 col-md-6">
+                  <div class="box box1">
+                     <a class="navbar-brand" href="index.html">NFT</a>
+                     <p>
+                        Lorem ipsum dolor sit amet Quis non, <br />
+                        consectetur adipisicing elit.<br />
+                        Fugit totam vel laboriosam vitae.
+                     </p>
+                     <div class="social-links">
+                        <a href="facebook.com">
+                           <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="facebook.com">
+                           <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="facebook.com">
+                           <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="facebook.com">
+                           <i class="fab fa-youtube"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6 ps-lg-5">
+                  <div class="box">
+                     <h5>useful links</h5>
+                     <ul class="links">
+                        <li><a href="">All NFTs</a></li>
+                        <li><a href="">How It Works</a></li>
+                        <li><a href="">Create</a></li>
+                        <li><a href="">Explore</a></li>
+                        <li><a href="">Privacy & Terms</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6">
+                  <div class="box">
+                     <h5>Community</h5>
+                     <ul class="links">
+                        <li><a href="">Help Center</a></li>
+                        <li><a href="">Partners</a></li>
+                        <li><a href="">Suggestions</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Newsletter</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6">
+                  <div class="box">
+                     <h5>subscribe newsletter</h5>
+                     <div class="input-group">
+                        <input
+                           type="email"
+                           class="form-control"
+                           placeholder="Enter email"
+                        />
+                        <button><i class="fal fa-paper-plane"></i></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row copyright">
+               <div class="col-md-6">
+                  <span>
+                     All rights reserved © 2022 by<a href="">Bug Finder</a>
+                  </span>
+               </div>
+               <div class="col-md-6 text-end">
+                  <a href="" class="language">Bengali</a>
+                  <a href="" class="language">English</a>
+                  <a href="" class="language">Spanish</a>
+                  <a href="" class="language">German</a>
+               </div>
+            </div>
+         </div>
+      </footer>
+
+      <!-- connect wallet modal -->
+      <div
+         class="modal fade"
+         id="connectWallet"
+         tabindex="-1"
+         aria-labelledby="connectWalletLabel"
+         aria-hidden="true"
+      >
+         <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content connect-wallet-modal">
+               <h5 class="header">Connect to MetaMask</h5>
+               <button
+                  class="dismiss-btn"
+                  type="button"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+               >
+                  <i class="fal fa-times"></i>
+               </button>
+               <a href="">
+                  <div class="box">
+                     <img src="./img/wallet/wallet1.png" alt="" />
+                  </div>
+               </a>
+               <p class="mb-0">
+                  By connecting your wallet, you agree to our Terms of Service
+                  and Privacy Policy
+               </p>
+            </div>
+         </div>
+      </div>
+
+      <!-- arrow up -->
+      <a href="#" class="scroll-up">
+         <i class="fal fa-chevron-double-up"></i>
+      </a>
+
+      <!-- bootstrap -->
+      <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+      <script src="./assets/bootstrap/masonry.pkgd.min.js"></script>
+      <!-- jquery cdn -->
+      <script src="./assets/jquery/jquery-3.6.0.min.js"></script>
+      <!-- owl carousel -->
+      <script src="./assets/plugins/owlcarousel/owl.carousel.min.js"></script>
+      <!-- counter up -->
+      <script src="./assets/plugins/counterup/jquery.waypoints.min.js"></script>
+      <script src="./assets/plugins/counterup/jquery.counterup.min.js"></script>
+      <!-- aos animation -->
+      <script src="./assets/plugins/aos/aos.js"></script>
+      <!-- fancy box -->
+      <script src="./assets/plugins/fancybox/jquery.fancybox.min.js"></script>
+      <!-- custom script -->
+      <script src="./js/script.js"></script>
+   </body>
+</html>

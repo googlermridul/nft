@@ -124,7 +124,7 @@ i {
       }
    }
    &.active {
-      background: url(../img/body-bg.png);
+      background: url(../img/body-bg2.png);
       background-size: cover;
       background-position: center top;
    }
@@ -645,7 +645,7 @@ i {
 
 // pre loader
 #preloader {
-   background-image: url(../img/body-bg.png);
+   background-image: url(../img/body-bg2.png);
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
@@ -670,7 +670,7 @@ i {
 
 // connect wallet modal
 .connect-wallet-modal {
-   background: url(../img/body-bg.png);
+   background: url(../img/body-bg2.png);
    background-position: bottom;
    border-radius: 20px;
    padding: 20px;
@@ -729,38 +729,54 @@ i {
             background: rgba(100, 69, 237, 0.2);
             border-radius: 20px;
             text-align: center;
-            padding-top: 24px;
-            width: 60px;
-            height: 60px;
+            padding-top: 30px;
+            width: 75px;
+            height: 75px;
          }
       }
    }
    form {
-      background: rgba(100, 69, 237, 0.2);
-      border-radius: 20px;
-      padding: 20px;
+      // background: rgba(100, 69, 237, 0.2);
+      // border-radius: 10px;
+      // padding: 30px;
       .input-field {
-         margin-bottom: 25px;
+         label {
+            font-weight: 500;
+            margin-bottom: 10px;
+            text-transform: capitalize;
+            display: none;
+         }
+         .form-select,
          .form-control {
             height: 55px;
-            border-radius: 100px;
+            border-radius: 10px;
             background: rgba(100, 69, 237, 0.2);
-            background: none;
-            border: 3px solid rgba(100, 69, 237, 0.2);
-            padding: 20px;
+            border: none;
+            padding: 15px;
+            font-size: 14px;
+            font-weight: normal;
             caret-color: #e039fd;
+            color: #b2bac2;
             &:focus {
                color: #fff;
                box-shadow: 0 0 0 0rem #fff;
             }
             &::placeholder {
-               text-transform: capitalize;
                color: #b2bac2;
+            }
+         }
+         option {
+            color: #000;
+            background: #fff;
+            transition: 0.3s;
+            &:hover {
+               background: #e039fd;
+               color: #fff;
             }
          }
          textarea.form-control {
             height: 150px;
-            border-radius: 15px;
+            border-radius: 10px;
          }
       }
       .btn-nft {
@@ -770,5 +786,134 @@ i {
             top: 2px;
          }
       }
+   }
+}
+
+// blog details
+.blog-details {
+   padding: 100px 0;
+   .img-box {
+      margin-bottom: 15px;
+   }
+   .blog-box {
+      margin-bottom: 50px;
+      &:last-child {
+         margin-bottom: 0;
+      }
+      .text-box {
+         .date-author {
+            margin-bottom: 15px;
+            span {
+               margin-right: 30px;
+               i {
+                  font-size: 16px;
+                  color: #e039fd;
+                  margin-right: 5px;
+               }
+            }
+         }
+         .continue-reading {
+            text-transform: capitalize;
+            color: #e039fd;
+            font-style: italic;
+         }
+      }
+   }
+   .side-box {
+      background: rgba(100, 69, 237, 0.2);
+      padding: 30px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      h5 {
+         text-transform: capitalize;
+      }
+      .post-box {
+         display: flex;
+         .img {
+            width: 35%;
+         }
+         .text {
+            width: 65%;
+            padding-left: 15px;
+            h5 {
+               margin-bottom: 10px;
+               text-transform: capitalize;
+            }
+            p {
+               margin-bottom: 0;
+            }
+         }
+      }
+      .links {
+         margin-bottom: 0;
+         padding-left: 0;
+         list-style: none;
+         li {
+            margin-bottom: 10px;
+            a {
+               color: #b2bac2;
+               text-transform: capitalize;
+               transition: 0.3s;
+               &:hover {
+                  color: #e039fd;
+               }
+            }
+            &:last-child {
+               margin-bottom: 0;
+            }
+         }
+      }
+   }
+
+   .input-group {
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 0px;
+      .form-control {
+         height: 50px;
+         border: none;
+         background: rgba(100, 69, 237, 0.2);
+         color: #fff;
+         caret-color: #e039fd;
+         padding-left: 20px;
+         &:focus {
+            box-shadow: 0 0 0 0rem rgba(13, 110, 253, 0.25);
+         }
+         &::placeholder {
+            text-transform: capitalize;
+            color: #b2bac2;
+         }
+      }
+      button {
+         width: 50px;
+         border: none;
+         background: linear-gradient(79deg, #6345ed 0%, #e039fd 100%);
+         i {
+            color: #fff;
+            font-size: 16px;
+         }
+      }
+   }
+}
+.pagination {
+   border-radius: 10px;
+   overflow: hidden;
+   .page-link {
+      border: none;
+      background: rgba(100, 69, 237, 0.2);
+      color: #b2bac2;
+      text-align: center;
+      padding: 10px 20px;
+   }
+   .page-item.active .page-link {
+      background: linear-gradient(79deg, #6345ed 0%, #e039fd 100%);
+      color: #fff;
+   }
+   .page-item.disabled .page-link {
+      background: rgba(100, 69, 237, 0.2);
+      color: #b2bac2;
+   }
+   .page-link:focus {
+      box-shadow: 0 0 0 0rem rgba(13, 109, 253, 0.211);
    }
 }

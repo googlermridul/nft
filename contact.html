@@ -86,6 +86,11 @@
          </div>
       </nav>
 
+      <!-- pre loader -->
+      <div id="preloader">
+         <img src="./img/slice_airplane.gif" alt="" class="loader" />
+      </div>
+
       <!-- banner -->
       <section class="banner">
          <div class="container">
@@ -102,7 +107,7 @@
       <!-- contact section -->
       <section class="contact-section">
          <div class="container">
-            <div class="row g-5">
+            <div class="row g-5 align-items-center justify-content-around">
                <div class="col-lg-6">
                   <div class="header-text mb-5">
                      <h2>contact us</h2>
@@ -111,13 +116,67 @@
                         and we love them
                      </p>
                   </div>
-                  <div class="contact-box">
+                  <form action="">
+                     <div class="row g-4">
+                        <div class="input-field col-md-6">
+                           <input
+                              class="form-control"
+                              type="text"
+                              placeholder="Full name"
+                           />
+                        </div>
+                        <div class="input-field col-md-6">
+                           <input
+                              class="form-control"
+                              type="email"
+                              placeholder="Email address"
+                           />
+                        </div>
+                        <div class="input-field col-md-6">
+                           <input
+                              class="form-control"
+                              type="text"
+                              placeholder="Phone number"
+                           />
+                        </div>
+                        <div class="input-field col-md-6">
+                           <select
+                              class="form-select"
+                              aria-label="Default select example"
+                           >
+                              <option selected>Subject</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                           </select>
+                        </div>
+                        <div class="input-field col-12">
+                           <textarea
+                              class="form-control"
+                              cols="30"
+                              rows="3"
+                              placeholder="Your message"
+                           ></textarea>
+                        </div>
+                        <div class="input-field col-12">
+                           <button class="btn-nft">
+                              <i class="fal fa-envelope"></i>submit
+                           </button>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+               <div class="col-lg-4 pt-5">
+                  <div class="contact-box pt-5">
                      <div class="icon-box">
                         <i class="fal fa-map-marker-alt"></i>
                      </div>
                      <div class="text-box">
                         <h5>Address</h5>
-                        <p>7 Green Lake Street Crawfordsville, IN 47933</p>
+                        <p>
+                           7 Green Lake Street Crawfordsville, <br />
+                           IN 47933
+                        </p>
                      </div>
                   </div>
 
@@ -127,7 +186,7 @@
                      </div>
                      <div class="text-box">
                         <h5>Email us</h5>
-                        <p>info@matrimony.com <br />support@matrimony.com</p>
+                        <p>info@nftmonkey.com <br />info2@nftmonkey.com</p>
                      </div>
                   </div>
 
@@ -137,41 +196,9 @@
                      </div>
                      <div class="text-box">
                         <h5>Call Now</h5>
-                        <p>
-                           +1 800 123 456 789 <br />
-                           +1 800 123 654 987
-                        </p>
+                        <p>+1 800 123 456 789 <br />+1 800 123 456 789</p>
                      </div>
                   </div>
-               </div>
-               <div class="col-lg-6">
-                  <form action="">
-                     <div class="input-field">
-                        <input
-                           class="form-control"
-                           type="text"
-                           placeholder="Your name"
-                        />
-                     </div>
-                     <div class="input-field">
-                        <input
-                           class="form-control"
-                           type="email"
-                           placeholder="Email address"
-                        />
-                     </div>
-                     <div class="input-field">
-                        <textarea
-                           class="form-control"
-                           cols="30"
-                           rows="3"
-                           placeholder="your message"
-                        ></textarea>
-                     </div>
-                     <button class="btn-nft">
-                        <i class="fal fa-envelope"></i>submit
-                     </button>
-                  </form>
                </div>
             </div>
          </div>
@@ -259,9 +286,36 @@
          </div>
       </footer>
 
-      <!-- pre loader -->
-      <div id="preloader">
-         <img src="./img/slice_airplane.gif" alt="" class="loader" />
+      <!-- connect wallet modal -->
+      <div
+         class="modal fade"
+         id="connectWallet"
+         tabindex="-1"
+         aria-labelledby="connectWalletLabel"
+         aria-hidden="true"
+      >
+         <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content connect-wallet-modal">
+               <h5 class="header">Connect to MetaMask</h5>
+               <button
+                  class="dismiss-btn"
+                  type="button"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+               >
+                  <i class="fal fa-times"></i>
+               </button>
+               <a href="">
+                  <div class="box">
+                     <img src="./img/wallet/wallet1.png" alt="" />
+                  </div>
+               </a>
+               <p class="mb-0">
+                  By connecting your wallet, you agree to our Terms of Service
+                  and Privacy Policy
+               </p>
+            </div>
+         </div>
       </div>
 
       <!-- arrow up -->

@@ -139,7 +139,7 @@ i {
 }
 
 .navbar.active {
-  background: url(../img/body-bg.png);
+  background: url(../img/body-bg2.png);
   background-size: cover;
   background-position: center top;
 }
@@ -736,7 +736,7 @@ i {
 }
 
 #preloader {
-  background-image: url(../img/body-bg.png);
+  background-image: url(../img/body-bg2.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -761,7 +761,7 @@ i {
 }
 
 .connect-wallet-modal {
-  background: url(../img/body-bg.png);
+  background: url(../img/body-bg2.png);
   background-position: bottom;
   border-radius: 20px;
   padding: 20px;
@@ -835,60 +835,73 @@ i {
   background: rgba(100, 69, 237, 0.2);
   border-radius: 20px;
   text-align: center;
-  padding-top: 24px;
-  width: 60px;
-  height: 60px;
+  padding-top: 30px;
+  width: 75px;
+  height: 75px;
 }
 
-.contact-section form {
-  background: rgba(100, 69, 237, 0.2);
-  border-radius: 20px;
-  padding: 20px;
+.contact-section form .input-field label {
+  font-weight: 500;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  display: none;
 }
 
-.contact-section form .input-field {
-  margin-bottom: 25px;
-}
-
+.contact-section form .input-field .form-select,
 .contact-section form .input-field .form-control {
   height: 55px;
-  border-radius: 100px;
+  border-radius: 10px;
   background: rgba(100, 69, 237, 0.2);
-  background: none;
-  border: 3px solid rgba(100, 69, 237, 0.2);
-  padding: 20px;
+  border: none;
+  padding: 15px;
+  font-size: 14px;
+  font-weight: normal;
   caret-color: #e039fd;
+  color: #b2bac2;
 }
 
+.contact-section form .input-field .form-select:focus,
 .contact-section form .input-field .form-control:focus {
   color: #fff;
   -webkit-box-shadow: 0 0 0 0rem #fff;
           box-shadow: 0 0 0 0rem #fff;
 }
 
+.contact-section form .input-field .form-select::-webkit-input-placeholder,
 .contact-section form .input-field .form-control::-webkit-input-placeholder {
-  text-transform: capitalize;
   color: #b2bac2;
 }
 
+.contact-section form .input-field .form-select:-ms-input-placeholder,
 .contact-section form .input-field .form-control:-ms-input-placeholder {
-  text-transform: capitalize;
   color: #b2bac2;
 }
 
+.contact-section form .input-field .form-select::-ms-input-placeholder,
 .contact-section form .input-field .form-control::-ms-input-placeholder {
-  text-transform: capitalize;
   color: #b2bac2;
 }
 
+.contact-section form .input-field .form-select::placeholder,
 .contact-section form .input-field .form-control::placeholder {
-  text-transform: capitalize;
   color: #b2bac2;
+}
+
+.contact-section form .input-field option {
+  color: #000;
+  background: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.contact-section form .input-field option:hover {
+  background: #e039fd;
+  color: #fff;
 }
 
 .contact-section form .input-field textarea.form-control {
   height: 150px;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .contact-section form .btn-nft {
@@ -899,5 +912,180 @@ i {
 .contact-section form .btn-nft i {
   position: relative;
   top: 2px;
+}
+
+.blog-details {
+  padding: 100px 0;
+}
+
+.blog-details .img-box {
+  margin-bottom: 15px;
+}
+
+.blog-details .blog-box {
+  margin-bottom: 50px;
+}
+
+.blog-details .blog-box:last-child {
+  margin-bottom: 0;
+}
+
+.blog-details .blog-box .text-box .date-author {
+  margin-bottom: 15px;
+}
+
+.blog-details .blog-box .text-box .date-author span {
+  margin-right: 30px;
+}
+
+.blog-details .blog-box .text-box .date-author span i {
+  font-size: 16px;
+  color: #e039fd;
+  margin-right: 5px;
+}
+
+.blog-details .blog-box .text-box .continue-reading {
+  text-transform: capitalize;
+  color: #e039fd;
+  font-style: italic;
+}
+
+.blog-details .side-box {
+  background: rgba(100, 69, 237, 0.2);
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+.blog-details .side-box h5 {
+  text-transform: capitalize;
+}
+
+.blog-details .side-box .post-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blog-details .side-box .post-box .img {
+  width: 35%;
+}
+
+.blog-details .side-box .post-box .text {
+  width: 65%;
+  padding-left: 15px;
+}
+
+.blog-details .side-box .post-box .text h5 {
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.blog-details .side-box .post-box .text p {
+  margin-bottom: 0;
+}
+
+.blog-details .side-box .links {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.blog-details .side-box .links li {
+  margin-bottom: 10px;
+}
+
+.blog-details .side-box .links li a {
+  color: #b2bac2;
+  text-transform: capitalize;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.blog-details .side-box .links li a:hover {
+  color: #e039fd;
+}
+
+.blog-details .side-box .links li:last-child {
+  margin-bottom: 0;
+}
+
+.blog-details .input-group {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 0px;
+}
+
+.blog-details .input-group .form-control {
+  height: 50px;
+  border: none;
+  background: rgba(100, 69, 237, 0.2);
+  color: #fff;
+  caret-color: #e039fd;
+  padding-left: 20px;
+}
+
+.blog-details .input-group .form-control:focus {
+  -webkit-box-shadow: 0 0 0 0rem rgba(13, 110, 253, 0.25);
+          box-shadow: 0 0 0 0rem rgba(13, 110, 253, 0.25);
+}
+
+.blog-details .input-group .form-control::-webkit-input-placeholder {
+  text-transform: capitalize;
+  color: #b2bac2;
+}
+
+.blog-details .input-group .form-control:-ms-input-placeholder {
+  text-transform: capitalize;
+  color: #b2bac2;
+}
+
+.blog-details .input-group .form-control::-ms-input-placeholder {
+  text-transform: capitalize;
+  color: #b2bac2;
+}
+
+.blog-details .input-group .form-control::placeholder {
+  text-transform: capitalize;
+  color: #b2bac2;
+}
+
+.blog-details .input-group button {
+  width: 50px;
+  border: none;
+  background: linear-gradient(79deg, #6345ed 0%, #e039fd 100%);
+}
+
+.blog-details .input-group button i {
+  color: #fff;
+  font-size: 16px;
+}
+
+.pagination {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.pagination .page-link {
+  border: none;
+  background: rgba(100, 69, 237, 0.2);
+  color: #b2bac2;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.pagination .page-item.active .page-link {
+  background: linear-gradient(79deg, #6345ed 0%, #e039fd 100%);
+  color: #fff;
+}
+
+.pagination .page-item.disabled .page-link {
+  background: rgba(100, 69, 237, 0.2);
+  color: #b2bac2;
+}
+
+.pagination .page-link:focus {
+  -webkit-box-shadow: 0 0 0 0rem rgba(13, 109, 253, 0.211);
+          box-shadow: 0 0 0 0rem rgba(13, 109, 253, 0.211);
 }
 /*# sourceMappingURL=style.css.map */

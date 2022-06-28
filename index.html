@@ -86,36 +86,9 @@
          </div>
       </nav>
 
-      <!-- connect wallet modal -->
-      <div
-         class="modal fade"
-         id="connectWallet"
-         tabindex="-1"
-         aria-labelledby="connectWalletLabel"
-         aria-hidden="true"
-      >
-         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content connect-wallet-modal">
-               <h5 class="header">Connect to MetaMask</h5>
-               <button
-                  class="dismiss-btn"
-                  type="button"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-               >
-                  <i class="fal fa-times"></i>
-               </button>
-               <a href="">
-                  <div class="box">
-                     <img src="./img/wallet/wallet1.png" alt="" />
-                  </div>
-               </a>
-               <p class="mb-0">
-                  By connecting your wallet, you agree to our Terms of Service
-                  and Privacy Policy
-               </p>
-            </div>
-         </div>
+      <!-- pre loader -->
+      <div id="preloader">
+         <img src="./img/slice_airplane.gif" alt="" class="loader" />
       </div>
 
       <!-- home section -->
@@ -1280,7 +1253,7 @@
                            </span>
                            <span> <i class="fal fa-user"></i>Moderator </span>
                         </div>
-                        <h5>Top 5 Most Popular NFT Games</h5>
+                        <h5>Updates on Non-Fungible Tokens</h5>
                         <p>
                            Lorem ipsum dolor sit amet consectetur adipisicing
                            elit Lorem ipsum dolor sit amet.
@@ -1305,7 +1278,7 @@
                            </span>
                            <span> <i class="fal fa-user"></i>Moderator </span>
                         </div>
-                        <h5>Top 5 Most Popular NFT Games</h5>
+                        <h5>Everything We're Reading about NFTs</h5>
                         <p>
                            Lorem ipsum dolor sit amet consectetur adipisicing
                            elit Lorem ipsum dolor sit amet.
@@ -1400,9 +1373,36 @@
          </div>
       </footer>
 
-      <!-- pre loader -->
-      <div id="preloader">
-         <img src="./img/slice_airplane.gif" alt="" class="loader" />
+      <!-- connect wallet modal -->
+      <div
+         class="modal fade"
+         id="connectWallet"
+         tabindex="-1"
+         aria-labelledby="connectWalletLabel"
+         aria-hidden="true"
+      >
+         <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content connect-wallet-modal">
+               <h5 class="header">Connect to MetaMask</h5>
+               <button
+                  class="dismiss-btn"
+                  type="button"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+               >
+                  <i class="fal fa-times"></i>
+               </button>
+               <a href="">
+                  <div class="box">
+                     <img src="./img/wallet/wallet1.png" alt="" />
+                  </div>
+               </a>
+               <p class="mb-0">
+                  By connecting your wallet, you agree to our Terms of Service
+                  and Privacy Policy
+               </p>
+            </div>
+         </div>
       </div>
 
       <!-- arrow up -->
