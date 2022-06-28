@@ -591,8 +591,13 @@ i {
             background: rgba(100, 69, 237, 0.2);
             color: #fff;
             caret-color: #e039fd;
+            padding-left: 20px;
             &:focus {
                box-shadow: 0 0 0 0rem rgba(13, 110, 253, 0.25);
+            }
+            &::placeholder {
+               text-transform: capitalize;
+               color: #b2bac2;
             }
          }
          button {
@@ -688,4 +693,57 @@ i {
 // contact section
 .contact-section {
    padding: 100px;
+   .contact-box {
+      display: flex;
+      margin-bottom: 30px;
+      .icon-box {
+         margin-right: 15px;
+         i {
+            font-size: 18px;
+            color: #e039fd;
+            background: rgba(100, 69, 237, 0.2);
+            border-radius: 20px;
+            text-align: center;
+            padding-top: 24px;
+            width: 60px;
+            height: 60px;
+         }
+      }
+   }
+   form {
+      background: rgba(100, 69, 237, 0.2);
+      border-radius: 20px;
+      padding: 20px;
+      .input-field {
+         margin-bottom: 25px;
+         .form-control {
+            height: 55px;
+            border-radius: 100px;
+            background: rgba(100, 69, 237, 0.2);
+            background: none;
+            border: 3px solid rgba(100, 69, 237, 0.2);
+            padding: 20px;
+            caret-color: #e039fd;
+            &:focus {
+               color: #fff;
+               box-shadow: 0 0 0 0rem #fff;
+            }
+            &::placeholder {
+               text-transform: capitalize;
+               color: #b2bac2;
+            }
+         }
+         textarea.form-control {
+            height: 150px;
+            border-radius: 15px;
+         }
+      }
+      .btn-nft {
+         box-shadow: none;
+         i {
+            position: relative;
+            top: 2px;
+         }
+      }
+   }
 }

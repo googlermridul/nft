@@ -660,11 +660,32 @@ i {
   background: rgba(100, 69, 237, 0.2);
   color: #fff;
   caret-color: #e039fd;
+  padding-left: 20px;
 }
 
 .footer-section .box .input-group .form-control:focus {
   -webkit-box-shadow: 0 0 0 0rem rgba(13, 110, 253, 0.25);
           box-shadow: 0 0 0 0rem rgba(13, 110, 253, 0.25);
+}
+
+.footer-section .box .input-group .form-control::-webkit-input-placeholder {
+  text-transform: capitalize;
+  color: #b2bac2;
+}
+
+.footer-section .box .input-group .form-control:-ms-input-placeholder {
+  text-transform: capitalize;
+  color: #b2bac2;
+}
+
+.footer-section .box .input-group .form-control::-ms-input-placeholder {
+  text-transform: capitalize;
+  color: #b2bac2;
+}
+
+.footer-section .box .input-group .form-control::placeholder {
+  text-transform: capitalize;
+  color: #b2bac2;
 }
 
 .footer-section .box .input-group button {
@@ -770,5 +791,88 @@ i {
 
 .contact-section {
   padding: 100px;
+}
+
+.contact-section .contact-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.contact-section .contact-box .icon-box {
+  margin-right: 15px;
+}
+
+.contact-section .contact-box .icon-box i {
+  font-size: 18px;
+  color: #e039fd;
+  background: rgba(100, 69, 237, 0.2);
+  border-radius: 20px;
+  text-align: center;
+  padding-top: 24px;
+  width: 60px;
+  height: 60px;
+}
+
+.contact-section form {
+  background: rgba(100, 69, 237, 0.2);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.contact-section form .input-field {
+  margin-bottom: 25px;
+}
+
+.contact-section form .input-field .form-control {
+  height: 55px;
+  border-radius: 100px;
+  background: rgba(100, 69, 237, 0.2);
+  background: none;
+  border: 3px solid rgba(100, 69, 237, 0.2);
+  padding: 20px;
+  caret-color: #e039fd;
+}
+
+.contact-section form .input-field .form-control:focus {
+  color: #fff;
+  -webkit-box-shadow: 0 0 0 0rem #fff;
+          box-shadow: 0 0 0 0rem #fff;
+}
+
+.contact-section form .input-field .form-control::-webkit-input-placeholder {
+  text-transform: capitalize;
+  color: #b2bac2;
+}
+
+.contact-section form .input-field .form-control:-ms-input-placeholder {
+  text-transform: capitalize;
+  color: #b2bac2;
+}
+
+.contact-section form .input-field .form-control::-ms-input-placeholder {
+  text-transform: capitalize;
+  color: #b2bac2;
+}
+
+.contact-section form .input-field .form-control::placeholder {
+  text-transform: capitalize;
+  color: #b2bac2;
+}
+
+.contact-section form .input-field textarea.form-control {
+  height: 150px;
+  border-radius: 15px;
+}
+
+.contact-section form .btn-nft {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.contact-section form .btn-nft i {
+  position: relative;
+  top: 2px;
 }
 /*# sourceMappingURL=style.css.map */
