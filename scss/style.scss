@@ -1,9 +1,35 @@
-@import url("http://fonts.cdnfonts.com/css/sofia-pro");
-@import url("http://fonts.cdnfonts.com/css/poppins");
-@import url("http://fonts.cdnfonts.com/css/combat-combo");
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800;900&display=swap");
-@import url("http://fonts.cdnfonts.com/css/awesome-journey");
-@import url("http://fonts.cdnfonts.com/css/hessthicc");
+// @import url("http://fonts.cdnfonts.com/css/awesome-journey");
+// @import url("http://fonts.cdnfonts.com/css/sofia-pro");
+
+@font-face {
+   font-family: "AweSomE JouRneY";
+   font-style: normal;
+   font-weight: 400;
+   src: local("AweSomE JouRneY"),
+      url("../fonts/AweSomE_JouRneY.otf") format("woff");
+}
+@font-face {
+   font-family: "Sofia Pro";
+   font-style: normal;
+   font-weight: 400;
+   src: local("Sofia Pro"),
+      url("../fonts/Sofia_Pro_Regular_Az.otf") format("woff");
+}
+@font-face {
+   font-family: "Sofia Pro";
+   font-style: normal;
+   font-weight: 300;
+   src: local("Sofia Pro"),
+      url("../fonts/Sofia_Pro_Light_Az.otf") format("woff");
+}
+@font-face {
+   font-family: "Sofia Pro";
+   font-style: normal;
+   font-weight: 500;
+   src: local("Sofia Pro"),
+      url("../fonts/Sofia_Pro_Medium_Az.otf") format("woff");
+}
 
 * {
    margin: 0;
@@ -14,6 +40,7 @@ body {
    background: url(../img/body-bg.png);
    background-size: cover;
    background-position: center top;
+   // background: #3c0f60;
    font-family: "Sofia Pro", sans-serif;
    color: #b2bac2;
    font-weight: 300;
@@ -67,19 +94,24 @@ i {
 .btn-nft {
    width: 175px;
    height: 55px;
+   display: inline-block;
    text-align: center;
+   padding: 18px 0;
    text-transform: uppercase;
    font-size: 14px;
    font-weight: 400;
    background-size: 200% auto;
    background: linear-gradient(79deg, #6345ed 0%, #e039fd 100%);
-   color: white;
+   color: #fff;
    border: none;
    border-radius: 100px;
    transition: 0.4s;
    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.8);
    i {
       margin-right: 10px;
+   }
+   &:hover {
+      color: #fff;
    }
 }
 
@@ -585,6 +617,8 @@ i {
          overflow: hidden;
          margin-bottom: 0px;
          .form-control {
+            font-size: 14px;
+            font-weight: normal;
             height: 50px;
             border: none;
             background: rgba(100, 69, 237, 0.2);
@@ -645,10 +679,7 @@ i {
 
 // pre loader
 #preloader {
-   background-image: url(../img/body-bg2.png);
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
+   background: #3c0f60;
    width: 100%;
    height: 100%;
    position: fixed;
@@ -736,9 +767,6 @@ i {
       }
    }
    form {
-      // background: rgba(100, 69, 237, 0.2);
-      // border-radius: 10px;
-      // padding: 30px;
       .input-field {
          label {
             font-weight: 500;
@@ -750,7 +778,7 @@ i {
          .form-control {
             height: 55px;
             border-radius: 10px;
-            background: rgba(100, 69, 237, 0.2);
+            background-color: rgba(100, 69, 237, 0.2);
             border: none;
             padding: 15px;
             font-size: 14px;
@@ -764,6 +792,9 @@ i {
             &::placeholder {
                color: #b2bac2;
             }
+         }
+         .form-select {
+            background-image: url(../img/icon/downward-arrow.png);
          }
          option {
             color: #000;
@@ -870,6 +901,8 @@ i {
       overflow: hidden;
       margin-bottom: 0px;
       .form-control {
+         font-size: 14px;
+         font-weight: normal;
          height: 50px;
          border: none;
          background: rgba(100, 69, 237, 0.2);
@@ -895,6 +928,8 @@ i {
       }
    }
 }
+
+// pagination
 .pagination {
    border-radius: 10px;
    overflow: hidden;
@@ -915,5 +950,110 @@ i {
    }
    .page-link:focus {
       box-shadow: 0 0 0 0rem rgba(13, 109, 253, 0.211);
+   }
+}
+
+form.filter {
+   margin-bottom: 50px;
+   .input-field {
+      display: flex;
+      column-gap: 25px;
+      .form-select,
+      .form-control {
+         height: 55px;
+         max-width: 306px;
+         border-radius: 10px;
+         background-color: rgba(100, 69, 237, 0.2);
+         border: none;
+         padding: 15px;
+         font-size: 14px;
+         font-weight: normal;
+         caret-color: #e039fd;
+         color: #b2bac2;
+         &:focus {
+            color: #fff;
+            box-shadow: 0 0 0 0rem #fff;
+         }
+         &::placeholder {
+            color: #b2bac2;
+         }
+      }
+      .form-select {
+         background-image: url(../img/icon/downward-arrow.png);
+      }
+      option {
+         color: #000;
+         background: #fff;
+         transition: 0.3s;
+         &:hover {
+            background: #e039fd;
+            color: #fff;
+         }
+      }
+      textarea.form-control {
+         height: 150px;
+         border-radius: 10px;
+      }
+   }
+   .btn-nft {
+      box-shadow: none;
+      i {
+         position: relative;
+         top: 2px;
+      }
+   }
+}
+
+// nft creators
+.nft-creators {
+   padding: 100px 0;
+   .creator-box {
+      background: rgba(100, 69, 237, 0.2);
+      padding: 20px;
+      border-radius: 20px;
+      text-align: center;
+      position: relative;
+      bottom: 0;
+      transition: 0.4s;
+      &:hover {
+         bottom: 10px;
+      }
+      .img-box {
+         .cover {
+            height: 150px;
+            width: 100%;
+            border-radius: 15px;
+         }
+         .profile {
+            height: 100px;
+            width: 100px;
+            border-radius: 100px;
+            margin-top: -50px;
+            margin-bottom: 15px;
+         }
+      }
+      .text-box {
+         a {
+            margin-bottom: 0px;
+            display: block;
+            font-size: 18px;
+            font-family: "Urbanist", sans-serif;
+            font-weight: 700;
+            color: #fff;
+            i {
+               font-size: 16px;
+               color: #6345ed;
+            }
+         }
+         .btn-nft {
+            height: 45px;
+            font-size: 12px;
+            box-shadow: none;
+            padding: 12px 0;
+            i {
+               font-size: 14px;
+            }
+         }
+      }
    }
 }

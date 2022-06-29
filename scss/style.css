@@ -1,9 +1,32 @@
-@import url("http://fonts.cdnfonts.com/css/sofia-pro");
-@import url("http://fonts.cdnfonts.com/css/poppins");
-@import url("http://fonts.cdnfonts.com/css/combat-combo");
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800;900&display=swap");
-@import url("http://fonts.cdnfonts.com/css/awesome-journey");
-@import url("http://fonts.cdnfonts.com/css/hessthicc");
+@font-face {
+  font-family: "AweSomE JouRneY";
+  font-style: normal;
+  font-weight: 400;
+  src: local("AweSomE JouRneY"), url("../fonts/AweSomE_JouRneY.otf") format("woff");
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Sofia Pro"), url("../fonts/Sofia_Pro_Regular_Az.otf") format("woff");
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Sofia Pro"), url("../fonts/Sofia_Pro_Light_Az.otf") format("woff");
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Sofia Pro"), url("../fonts/Sofia_Pro_Medium_Az.otf") format("woff");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -79,13 +102,15 @@ i {
 .btn-nft {
   width: 175px;
   height: 55px;
+  display: inline-block;
   text-align: center;
+  padding: 18px 0;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 400;
   background-size: 200% auto;
   background: linear-gradient(79deg, #6345ed 0%, #e039fd 100%);
-  color: white;
+  color: #fff;
   border: none;
   border-radius: 100px;
   -webkit-transition: 0.4s;
@@ -96,6 +121,10 @@ i {
 
 .btn-nft i {
   margin-right: 10px;
+}
+
+.btn-nft:hover {
+  color: #fff;
 }
 
 .navbar .navbar-brand {
@@ -655,6 +684,8 @@ i {
 }
 
 .footer-section .box .input-group .form-control {
+  font-size: 14px;
+  font-weight: normal;
   height: 50px;
   border: none;
   background: rgba(100, 69, 237, 0.2);
@@ -736,10 +767,7 @@ i {
 }
 
 #preloader {
-  background-image: url(../img/body-bg2.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: #3c0f60;
   width: 100%;
   height: 100%;
   position: fixed;
@@ -851,7 +879,7 @@ i {
 .contact-section form .input-field .form-control {
   height: 55px;
   border-radius: 10px;
-  background: rgba(100, 69, 237, 0.2);
+  background-color: rgba(100, 69, 237, 0.2);
   border: none;
   padding: 15px;
   font-size: 14px;
@@ -885,6 +913,10 @@ i {
 .contact-section form .input-field .form-select::placeholder,
 .contact-section form .input-field .form-control::placeholder {
   color: #b2bac2;
+}
+
+.contact-section form .input-field .form-select {
+  background-image: url(../img/icon/downward-arrow.png);
 }
 
 .contact-section form .input-field option {
@@ -1017,6 +1049,8 @@ i {
 }
 
 .blog-details .input-group .form-control {
+  font-size: 14px;
+  font-weight: normal;
   height: 50px;
   border: none;
   background: rgba(100, 69, 237, 0.2);
@@ -1087,5 +1121,148 @@ i {
 .pagination .page-link:focus {
   -webkit-box-shadow: 0 0 0 0rem rgba(13, 109, 253, 0.211);
           box-shadow: 0 0 0 0rem rgba(13, 109, 253, 0.211);
+}
+
+form.filter {
+  margin-bottom: 50px;
+}
+
+form.filter .input-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 25px;
+          column-gap: 25px;
+}
+
+form.filter .input-field .form-select,
+form.filter .input-field .form-control {
+  height: 55px;
+  max-width: 306px;
+  border-radius: 10px;
+  background-color: rgba(100, 69, 237, 0.2);
+  border: none;
+  padding: 15px;
+  font-size: 14px;
+  font-weight: normal;
+  caret-color: #e039fd;
+  color: #b2bac2;
+}
+
+form.filter .input-field .form-select:focus,
+form.filter .input-field .form-control:focus {
+  color: #fff;
+  -webkit-box-shadow: 0 0 0 0rem #fff;
+          box-shadow: 0 0 0 0rem #fff;
+}
+
+form.filter .input-field .form-select::-webkit-input-placeholder,
+form.filter .input-field .form-control::-webkit-input-placeholder {
+  color: #b2bac2;
+}
+
+form.filter .input-field .form-select:-ms-input-placeholder,
+form.filter .input-field .form-control:-ms-input-placeholder {
+  color: #b2bac2;
+}
+
+form.filter .input-field .form-select::-ms-input-placeholder,
+form.filter .input-field .form-control::-ms-input-placeholder {
+  color: #b2bac2;
+}
+
+form.filter .input-field .form-select::placeholder,
+form.filter .input-field .form-control::placeholder {
+  color: #b2bac2;
+}
+
+form.filter .input-field .form-select {
+  background-image: url(../img/icon/downward-arrow.png);
+}
+
+form.filter .input-field option {
+  color: #000;
+  background: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+form.filter .input-field option:hover {
+  background: #e039fd;
+  color: #fff;
+}
+
+form.filter .input-field textarea.form-control {
+  height: 150px;
+  border-radius: 10px;
+}
+
+form.filter .btn-nft {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+form.filter .btn-nft i {
+  position: relative;
+  top: 2px;
+}
+
+.nft-creators {
+  padding: 100px 0;
+}
+
+.nft-creators .creator-box {
+  background: rgba(100, 69, 237, 0.2);
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.nft-creators .creator-box:hover {
+  bottom: 10px;
+}
+
+.nft-creators .creator-box .img-box .cover {
+  height: 150px;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.nft-creators .creator-box .img-box .profile {
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  margin-top: -50px;
+  margin-bottom: 15px;
+}
+
+.nft-creators .creator-box .text-box a {
+  margin-bottom: 0px;
+  display: block;
+  font-size: 18px;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 700;
+  color: #fff;
+}
+
+.nft-creators .creator-box .text-box a i {
+  font-size: 16px;
+  color: #6345ed;
+}
+
+.nft-creators .creator-box .text-box .btn-nft {
+  height: 45px;
+  font-size: 12px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 12px 0;
+}
+
+.nft-creators .creator-box .text-box .btn-nft i {
+  font-size: 14px;
 }
 /*# sourceMappingURL=style.css.map */
