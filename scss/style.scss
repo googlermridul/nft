@@ -229,7 +229,7 @@ i {
          img {
             border-radius: 15px;
          }
-         .wishlist {
+         .react {
             position: absolute;
             top: 10px;
             right: 10px;
@@ -825,6 +825,9 @@ i {
    padding: 100px 0;
    .img-box {
       margin-bottom: 15px;
+      img {
+         border-radius: 10px;
+      }
    }
    .blog-box {
       margin-bottom: 50px;
@@ -953,6 +956,7 @@ i {
    }
 }
 
+// filter area
 form.filter {
    margin-bottom: 50px;
    .input-field {
@@ -1020,7 +1024,7 @@ form.filter {
       }
       .img-box {
          .cover {
-            height: 150px;
+            height: 120px;
             width: 100%;
             border-radius: 15px;
          }
@@ -1055,5 +1059,155 @@ form.filter {
             }
          }
       }
+   }
+}
+
+// nft details
+.nft-details {
+   padding: 100px 0;
+   .img-box {
+      img {
+         border-radius: 10px;
+      }
+   }
+   .text-box {
+      .btn-group {
+         margin-bottom: 30px;
+         width: 100%;
+         .react {
+            background: rgba(100, 69, 237, 0.2);
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            font-weight: 300;
+            border-radius: 10px;
+            font-size: 14px;
+            -webkit-transition: 0.4s;
+            transition: 0.4s;
+            i {
+               position: relative;
+               top: 2px;
+               font-size: 16px;
+               margin-right: 5px;
+            }
+            &:hover {
+               color: #e039fd;
+            }
+         }
+      }
+      .owners {
+         column-gap: 25px;
+         .box {
+            background: rgba(100, 69, 237, 0.2);
+            padding: 10px;
+            border-radius: 20px;
+            display: flex;
+            width: 100%;
+            align-items: center;
+            img {
+               width: 50px;
+               height: 50px;
+               border-radius: 10px;
+               margin-right: 10px;
+            }
+            p {
+               color: #fff;
+               span {
+                  font-size: 12px;
+               }
+            }
+            span {
+               color: #b2bac2;
+            }
+         }
+      }
+      .prices {
+         .box {
+            padding: 10px 20px;
+            border-radius: 10px;
+         }
+      }
+      .btn-nft {
+         height: 45px;
+         width: 100%;
+         margin-top: 30px;
+         padding-top: 13px;
+         font-size: 12px;
+         box-shadow: none;
+      }
+   }
+   .navigator {
+      margin-top: 30px;
+      margin-bottom: 15px;
+      background: rgba(100, 69, 237, 0.2);
+      padding: 10px;
+      border-radius: 15px;
+      display: flex;
+      column-gap: 10px;
+      button {
+         color: #b2bac2;
+         padding: 10px;
+         border-radius: 10px;
+         text-transform: capitalize;
+         transition: 0.3s;
+         &:hover,
+         &.active {
+            background: rgba(100, 69, 237, 0.2);
+            color: #e039fd;
+         }
+      }
+   }
+   .content {
+      padding: 10px;
+      display: none;
+      .wrapper {
+         border-radius: 20px;
+         display: flex;
+         width: 100%;
+         align-items: center;
+      }
+      .box {
+         display: flex;
+         align-items: center;
+         margin-bottom: 15px;
+         img {
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+            margin-right: 10px;
+         }
+         p {
+            color: #b2bac2;
+            margin-bottom: 0;
+            span {
+               color: #fff;
+            }
+         }
+         span.date {
+            color: #b2bac2;
+            font-size: 12px;
+         }
+      }
+      .box2 {
+         p {
+            color: #fff;
+         }
+      }
+   }
+   .additional-info {
+      ul {
+         list-style: none;
+         padding-left: 0;
+         li {
+            margin-bottom: 10px;
+            span {
+               text-align: right;
+               float: right;
+            }
+         }
+      }
+   }
+   .content.active {
+      display: block;
    }
 }

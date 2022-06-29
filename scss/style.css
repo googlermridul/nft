@@ -245,7 +245,7 @@ i {
   border-radius: 15px;
 }
 
-.live-auction .nft-box .img-box .wishlist {
+.live-auction .nft-box .img-box .react {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -258,7 +258,7 @@ i {
   transition: 0.4s;
 }
 
-.live-auction .nft-box .img-box .wishlist i {
+.live-auction .nft-box .img-box .react i {
   font-size: 14px;
   margin-right: 5px;
 }
@@ -954,6 +954,10 @@ i {
   margin-bottom: 15px;
 }
 
+.blog-details .img-box img {
+  border-radius: 10px;
+}
+
 .blog-details .blog-box {
   margin-bottom: 50px;
 }
@@ -1227,7 +1231,7 @@ form.filter .btn-nft i {
 }
 
 .nft-creators .creator-box .img-box .cover {
-  height: 150px;
+  height: 120px;
   width: 100%;
   border-radius: 15px;
 }
@@ -1264,5 +1268,189 @@ form.filter .btn-nft i {
 
 .nft-creators .creator-box .text-box .btn-nft i {
   font-size: 14px;
+}
+
+.nft-details {
+  padding: 100px 0;
+}
+
+.nft-details .img-box img {
+  border-radius: 10px;
+}
+
+.nft-details .text-box .btn-group {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.nft-details .text-box .btn-group .react {
+  background: rgba(100, 69, 237, 0.2);
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  font-weight: 300;
+  border-radius: 10px;
+  font-size: 14px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.nft-details .text-box .btn-group .react i {
+  position: relative;
+  top: 2px;
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.nft-details .text-box .btn-group .react:hover {
+  color: #e039fd;
+}
+
+.nft-details .text-box .owners {
+  -webkit-column-gap: 25px;
+          column-gap: 25px;
+}
+
+.nft-details .text-box .owners .box {
+  background: rgba(100, 69, 237, 0.2);
+  padding: 10px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nft-details .text-box .owners .box img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.nft-details .text-box .owners .box p {
+  color: #fff;
+}
+
+.nft-details .text-box .owners .box p span {
+  font-size: 12px;
+}
+
+.nft-details .text-box .owners .box span {
+  color: #b2bac2;
+}
+
+.nft-details .text-box .prices .box {
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.nft-details .text-box .btn-nft {
+  height: 45px;
+  width: 100%;
+  margin-top: 30px;
+  padding-top: 13px;
+  font-size: 12px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.nft-details .navigator {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  background: rgba(100, 69, 237, 0.2);
+  padding: 10px;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+}
+
+.nft-details .navigator button {
+  color: #b2bac2;
+  padding: 10px;
+  border-radius: 10px;
+  text-transform: capitalize;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.nft-details .navigator button:hover, .nft-details .navigator button.active {
+  background: rgba(100, 69, 237, 0.2);
+  color: #e039fd;
+}
+
+.nft-details .content {
+  padding: 10px;
+  display: none;
+}
+
+.nft-details .content .wrapper {
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nft-details .content .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+
+.nft-details .content .box img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.nft-details .content .box p {
+  color: #b2bac2;
+  margin-bottom: 0;
+}
+
+.nft-details .content .box p span {
+  color: #fff;
+}
+
+.nft-details .content .box span.date {
+  color: #b2bac2;
+  font-size: 12px;
+}
+
+.nft-details .content .box2 p {
+  color: #fff;
+}
+
+.nft-details .additional-info ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.nft-details .additional-info ul li {
+  margin-bottom: 10px;
+}
+
+.nft-details .additional-info ul li span {
+  text-align: right;
+  float: right;
+}
+
+.nft-details .content.active {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */

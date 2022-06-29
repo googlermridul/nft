@@ -30,6 +30,24 @@ for (const element of navItem) {
    });
 }
 
+// tab
+const tabs = document.getElementsByClassName("tab");
+const contents = document.getElementsByClassName("content");
+for (const element of tabs) {
+   const tabId = element.getAttribute("tab-id");
+   const content = document.getElementById(tabId);
+   element.addEventListener("click", () => {
+      for (const t of tabs) {
+         t.classList.remove("active");
+      }
+      for (const c of contents) {
+         c.classList.remove("active");
+      }
+      element.classList.add("active");
+      content.classList.add("active");
+   });
+}
+
 $(document).ready(function () {
    $(".testimonials").owlCarousel({
       loop: true,
