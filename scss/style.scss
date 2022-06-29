@@ -153,6 +153,7 @@ i {
       .btn-nft {
          width: 200px;
          height: 50px;
+         padding: 14px 0;
       }
    }
    &.active {
@@ -274,6 +275,7 @@ i {
             height: 50px;
             opacity: 0;
             box-shadow: none;
+            padding: 15px 0;
          }
       }
       .text-box {
@@ -465,7 +467,7 @@ i {
       .img-box {
          margin-bottom: 15px;
          img {
-            border-radius: 15px;
+            border-radius: 100px;
             width: 120px;
             height: 120px;
             margin: auto;
@@ -477,16 +479,6 @@ i {
             color: #b2bac2;
             position: relative;
             transition: 0.4s;
-            // left: 30px;
-            // &:before {
-            //    content: "";
-            //    position: absolute;
-            //    width: 15px;
-            //    height: 2px;
-            //    background: #e039fd;
-            //    left: -30px;
-            //    top: 9px;
-            // }
          }
       }
       .fa-quote-right {
@@ -942,7 +934,10 @@ i {
       color: #b2bac2;
       text-align: center;
       padding: 10px 20px;
+      margin: 0 10px;
+      border-radius: 10px !important;
    }
+   .page-item:hover .page-link,
    .page-item.active .page-link {
       background: linear-gradient(79deg, #6345ed 0%, #e039fd 100%);
       color: #fff;
