@@ -5,7 +5,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="icon" type="image/x-icon" href="./img/fav.png" />
-      <title>NFT | Explore</title>
+      <title>NFT | Profile</title>
       <!-- bootstrap 5 -->
       <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
       <!-- owl carousel -->
@@ -104,98 +104,478 @@
          </div>
       </section>
 
-      <!-- trending nfts -->
-      <section class="live-auction trending-nfts">
+      <!-- profile section -->
+      <section class="profile-section">
          <div class="container">
             <div class="row">
                <div class="col">
-                  <!-- filter area -->
-                  <form class="filter" action="">
-                     <div class="row g-4">
-                        <div class="input-field col-md-6">
-                           <!-- <input
-                              class="form-control"
-                              type="text"
-                              placeholder="Full name"
-                           /> -->
-                           <select
-                              class="form-select"
-                              aria-label="Default select example"
-                           >
-                              <option selected>All Categories</option>
-                              <option value="1">Music</option>
-                              <option value="2">Games</option>
-                              <option value="3">Domain names</option>
-                              <option value="4">Virtual world</option>
-                              <option value="5">Trading cards</option>
-                              <option value="6">Sports</option>
-                              <option value="7">Utility</option>
-                           </select>
-
-                           <select
-                              class="form-select"
-                              aria-label="Default select example"
-                           >
-                              <option selected>All Artworks</option>
-                              <option value="1">Abstraction</option>
-                              <option value="2">Skecthify</option>
-                              <option value="3">Patternmicious</option>
-                              <option value="4">Virtuland</option>
-                              <option value="5">Papercut</option>
-                           </select>
+                  <div class="cover-wrapper">
+                     <div class="row">
+                        <div class="col-lg-6">
+                           <div class="about d-flex">
+                              <img
+                                 src="./img/owner/creator3.jpg"
+                                 class="img-fluid profile"
+                                 alt=""
+                              />
+                              <div>
+                                 <h4 class="name">
+                                    Trista Francis
+                                    <i
+                                       class="fas fa-check-circle"
+                                       aria-hidden="true"
+                                    ></i>
+                                 </h4>
+                                 <p class="bio">
+                                    My name is Trista Francis & change my
+                                    occupation after five years of working in
+                                    sales. I still like drawing.
+                                 </p>
+                                 <div class="links">
+                                    <a href="">
+                                       <i class="fal fa-globe"></i
+                                       >tristafrancis.io
+                                    </a>
+                                    <a href="">
+                                       <i class="fal fa-location-arrow"></i>Bran
+                                       Street New York, USA
+                                    </a>
+                                    <a href="">
+                                       <i class="fal fa-calendar-alt"></i>Joined
+                                       March 2010
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
                         </div>
-                        <div class="input-field col-md-6">
-                           <select
-                              class="form-select"
-                              aria-label="Default select example"
-                           >
-                              <option selected>Buy now</option>
-                              <option value="1">On auction</option>
-                              <option value="2">Has offer</option>
-                           </select>
-                           <select
-                              class="form-select"
-                              aria-label="Default select example"
-                           >
-                              <option selected>All items</option>
-                              <option value="1">Single item</option>
-                              <option value="2">Bundles</option>
-                           </select>
-                           <select
-                              class="form-select"
-                              aria-label="Default select example"
-                           >
-                              <option selected>Sort by</option>
-                              <option value="1">Top rate</option>
-                              <option value="2">Mid rate</option>
-                              <option value="3">Low rate</option>
-                           </select>
+                        <div class="col-lg-6">
+                           <div class="right-wrapper">
+                              <div class="button-group text-end">
+                                 <button class="user-id">
+                                    iaho5451sdf51d <i class="fal fa-copy"></i>
+                                 </button>
+                                 <button class="share">
+                                    <i class="fal fa-share-alt"></i>
+                                 </button>
+                                 <button class="btn-nft">
+                                    <i class="fal fa-plus"></i>follow
+                                 </button>
+                              </div>
+                              <div class="social-links">
+                                 <a href="facebook.com">
+                                    <i class="fab fa-facebook"></i>
+                                 </a>
+                                 <a href="facebook.com">
+                                    <i class="fab fa-linkedin-in"></i>
+                                 </a>
+                                 <a href="facebook.com">
+                                    <i class="fab fa-twitter"></i>
+                                 </a>
+                                 <a href="facebook.com">
+                                    <i class="fab fa-youtube"></i>
+                                 </a>
+                              </div>
+                              <div class="counts">
+                                 <div class="count">
+                                    Create
+                                    <span>78</span>
+                                 </div>
+                                 <div class="count">
+                                    Like
+                                    <span>87,950</span>
+                                 </div>
+                                 <div class="count">
+                                    Follower
+                                    <span>470</span>
+                                 </div>
+                                 <div class="count">
+                                    Followed
+                                    <span>360</span>
+                                 </div>
+                              </div>
+                           </div>
                         </div>
                      </div>
-                  </form>
+                  </div>
                </div>
             </div>
-            <div class="row mt-5">
+         </div>
+      </section>
+
+      <!-- author artworks -->
+      <section class="author-artworks">
+         <div class="container">
+            <div class="row">
                <div class="col">
-                  <nav aria-label="Page navigation example">
-                     <ul class="pagination justify-content-center">
-                        <li class="page-item disabled">
-                           <a class="page-link">Previous</a>
-                        </li>
-                        <li class="page-item active">
-                           <a class="page-link" href="#">1</a>
-                        </li>
-                        <li class="page-item">
-                           <a class="page-link" href="#">2</a>
-                        </li>
-                        <li class="page-item">
-                           <a class="page-link" href="#">3</a>
-                        </li>
-                        <li class="page-item">
-                           <a class="page-link" href="#">Next</a>
-                        </li>
-                     </ul>
-                  </nav>
+                  <div class="navigator">
+                     <button tab-id="tab1" class="tab active">Created</button>
+                     <button tab-id="tab1" class="tab">Collection</button>
+                     <button tab-id="tab2" class="tab">Featured Items</button>
+                     <button tab-id="tab3" class="tab">Total Sold</button>
+                     <button tab-id="tab3" class="tab">Total Bids</button>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col">
+                  <div id="tab1" class="content active">
+                     <div class="live-auction pt-3">
+                        <div class="row g-4">
+                           <div class="col-lg-3 col-md-6">
+                              <div class="nft-box">
+                                 <div class="img-box">
+                                    <img
+                                       src="./img/nft/doge3.png"
+                                       class="img-fluid"
+                                       alt=""
+                                    />
+                                    <button class="react">
+                                       <i class="fal fa-heart"></i>85
+                                    </button>
+                                    <a class="btn-nft" href="details.html">
+                                       <i class="fas fa-gavel"></i>place bid
+                                    </a>
+                                 </div>
+                                 <div class="text-box">
+                                    <div
+                                       class="d-flex justify-content-between mb-3"
+                                    >
+                                       <a class="title" href="details.html"
+                                          >Hamlet Contemplates</a
+                                       >
+                                       <div class="dropdown">
+                                          <button
+                                             class="dot dropdown-toggle"
+                                             id="postAction1"
+                                             data-bs-toggle="dropdown"
+                                             aria-expanded="false"
+                                          >
+                                             <i class="far fa-ellipsis-v"></i>
+                                          </button>
+                                          <ul
+                                             class="dropdown-menu dropdown-menu-end"
+                                             aria-labelledby="postAction1"
+                                          >
+                                             <li>
+                                                <a
+                                                   class="dropdown-item"
+                                                   href="#"
+                                                >
+                                                   <i
+                                                      class="fal fa-share-alt"
+                                                   ></i
+                                                   >share
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a
+                                                   class="dropdown-item"
+                                                   href="#"
+                                                >
+                                                   <i
+                                                      class="fal fa-flag-alt"
+                                                   ></i
+                                                   >report
+                                                </a>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                       <div
+                                          class="creator d-flex align-items-center"
+                                       >
+                                          <img
+                                             class="me-2"
+                                             src="./img/owner/creator1.jpg"
+                                             alt=""
+                                          />
+                                          <div>
+                                             <span>Owner</span>
+                                             <a
+                                                class="creator-name"
+                                                href="profile.html"
+                                                >Trista francis</a
+                                             >
+                                          </div>
+                                       </div>
+                                       <div class="price text-end">
+                                          <div>
+                                             <span>Price</span>
+                                             <p class="mb-0">4.65 ETH</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="nft-box">
+                                 <div class="img-box">
+                                    <img
+                                       src="./img/nft/nft4.gif"
+                                       class="img-fluid"
+                                       alt=""
+                                    />
+                                    <button class="react">
+                                       <i class="fal fa-heart"></i>85
+                                    </button>
+                                    <a class="btn-nft" href="details.html">
+                                       <i class="fas fa-gavel"></i>place bid
+                                    </a>
+                                 </div>
+                                 <div class="text-box">
+                                    <div
+                                       class="d-flex justify-content-between mb-3"
+                                    >
+                                       <a class="title" href="details.html"
+                                          >Hamlet Contemplates</a
+                                       >
+                                       <div class="dropdown">
+                                          <button
+                                             class="dot dropdown-toggle"
+                                             id="postAction1"
+                                             data-bs-toggle="dropdown"
+                                             aria-expanded="false"
+                                          >
+                                             <i class="far fa-ellipsis-v"></i>
+                                          </button>
+                                          <ul
+                                             class="dropdown-menu dropdown-menu-end"
+                                             aria-labelledby="postAction1"
+                                          >
+                                             <li>
+                                                <a
+                                                   class="dropdown-item"
+                                                   href="#"
+                                                >
+                                                   <i
+                                                      class="fal fa-share-alt"
+                                                   ></i
+                                                   >share
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a
+                                                   class="dropdown-item"
+                                                   href="#"
+                                                >
+                                                   <i
+                                                      class="fal fa-flag-alt"
+                                                   ></i
+                                                   >report
+                                                </a>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                       <div
+                                          class="creator d-flex align-items-center"
+                                       >
+                                          <img
+                                             class="me-2"
+                                             src="./img/owner/creator4.jpg"
+                                             alt=""
+                                          />
+                                          <div>
+                                             <span>Owner</span>
+                                             <a
+                                                class="creator-name"
+                                                href="profile.html"
+                                                >Trista francis</a
+                                             >
+                                          </div>
+                                       </div>
+                                       <div class="price text-end">
+                                          <div>
+                                             <span>Price</span>
+                                             <p class="mb-0">4.65 ETH</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="nft-box">
+                                 <div class="img-box">
+                                    <img
+                                       src="./img/nft/nft3.gif"
+                                       class="img-fluid"
+                                       alt=""
+                                    />
+                                    <button class="react">
+                                       <i class="fal fa-heart"></i>85
+                                    </button>
+                                    <a class="btn-nft" href="details.html">
+                                       <i class="fas fa-gavel"></i>place bid
+                                    </a>
+                                 </div>
+                                 <div class="text-box">
+                                    <div
+                                       class="d-flex justify-content-between mb-3"
+                                    >
+                                       <a class="title" href="details.html"
+                                          >Hamlet Contemplates</a
+                                       >
+                                       <div class="dropdown">
+                                          <button
+                                             class="dot dropdown-toggle"
+                                             id="postAction1"
+                                             data-bs-toggle="dropdown"
+                                             aria-expanded="false"
+                                          >
+                                             <i class="far fa-ellipsis-v"></i>
+                                          </button>
+                                          <ul
+                                             class="dropdown-menu dropdown-menu-end"
+                                             aria-labelledby="postAction1"
+                                          >
+                                             <li>
+                                                <a
+                                                   class="dropdown-item"
+                                                   href="#"
+                                                >
+                                                   <i
+                                                      class="fal fa-share-alt"
+                                                   ></i
+                                                   >share
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a
+                                                   class="dropdown-item"
+                                                   href="#"
+                                                >
+                                                   <i
+                                                      class="fal fa-flag-alt"
+                                                   ></i
+                                                   >report
+                                                </a>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                       <div
+                                          class="creator d-flex align-items-center"
+                                       >
+                                          <img
+                                             class="me-2"
+                                             src="./img/owner/creator3.jpg"
+                                             alt=""
+                                          />
+                                          <div>
+                                             <span>Owner</span>
+                                             <a
+                                                class="creator-name"
+                                                href="profile.html"
+                                                >Trista francis</a
+                                             >
+                                          </div>
+                                       </div>
+                                       <div class="price text-end">
+                                          <div>
+                                             <span>Price</span>
+                                             <p class="mb-0">4.65 ETH</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="nft-box">
+                                 <div class="img-box">
+                                    <img
+                                       src="./img/nft/nft2.gif"
+                                       class="img-fluid"
+                                       alt=""
+                                    />
+                                    <button class="react">
+                                       <i class="fal fa-heart"></i>85
+                                    </button>
+                                    <a class="btn-nft" href="details.html">
+                                       <i class="fas fa-gavel"></i>place bid
+                                    </a>
+                                 </div>
+                                 <div class="text-box">
+                                    <div
+                                       class="d-flex justify-content-between mb-3"
+                                    >
+                                       <a class="title" href="details.html"
+                                          >Hamlet Contemplates</a
+                                       >
+                                       <div class="dropdown">
+                                          <button
+                                             class="dot dropdown-toggle"
+                                             id="postAction1"
+                                             data-bs-toggle="dropdown"
+                                             aria-expanded="false"
+                                          >
+                                             <i class="far fa-ellipsis-v"></i>
+                                          </button>
+                                          <ul
+                                             class="dropdown-menu dropdown-menu-end"
+                                             aria-labelledby="postAction1"
+                                          >
+                                             <li>
+                                                <a
+                                                   class="dropdown-item"
+                                                   href="#"
+                                                >
+                                                   <i
+                                                      class="fal fa-share-alt"
+                                                   ></i
+                                                   >share
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a
+                                                   class="dropdown-item"
+                                                   href="#"
+                                                >
+                                                   <i
+                                                      class="fal fa-flag-alt"
+                                                   ></i
+                                                   >report
+                                                </a>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                       <div
+                                          class="creator d-flex align-items-center"
+                                       >
+                                          <img
+                                             class="me-2"
+                                             src="./img/owner/creator2.jpg"
+                                             alt=""
+                                          />
+                                          <div>
+                                             <span>Owner</span>
+                                             <a
+                                                class="creator-name"
+                                                href="profile.html"
+                                                >Trista francis</a
+                                             >
+                                          </div>
+                                       </div>
+                                       <div class="price text-end">
+                                          <div>
+                                             <span>Price</span>
+                                             <p class="mb-0">4.65 ETH</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
                </div>
             </div>
          </div>

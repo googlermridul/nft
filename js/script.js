@@ -48,6 +48,10 @@ for (const element of tabs) {
    });
 }
 
+const previewImage = (id) => {
+   document.getElementById(id).src = URL.createObjectURL(event.target.files[0]);
+};
+
 $(document).ready(function () {
    $(".testimonials").owlCarousel({
       loop: true,

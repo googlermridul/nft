@@ -146,14 +146,15 @@ i {
          top: 5px;
          margin-right: 15px;
          i {
-            font-size: 24px;
+            font-size: 22px;
             color: #fff;
          }
       }
       .btn-nft {
-         width: 200px;
+         width: 180px;
          height: 50px;
          padding: 14px 0;
+         text-transform: capitalize;
       }
    }
    &.active {
@@ -223,6 +224,7 @@ i {
       border-radius: 20px;
       position: relative;
       bottom: 0;
+      height: 100%;
       transition: 0.4s;
       .img-box {
          margin-bottom: 15px;
@@ -279,13 +281,16 @@ i {
          }
       }
       .text-box {
-         a {
+         a.title {
             display: block;
             font-size: 18px;
             font-family: "Urbanist", sans-serif;
             font-weight: 700;
             color: #fff;
             transition: 0.4s;
+            &:hover {
+               color: #e039fd;
+            }
          }
          .dot {
             padding-left: 15px;
@@ -323,6 +328,14 @@ i {
          }
          p {
             color: #fff;
+         }
+         a.creator-name {
+            display: block;
+            color: #fff;
+            transition: 0.4s;
+            &:hover {
+               color: #e039fd;
+            }
          }
          .creator {
             img {
@@ -362,13 +375,17 @@ i {
       .text-box {
          margin-left: 15px;
          width: calc(100% - 90px);
-         a {
+         a.creator-name {
             display: block;
             margin-bottom: 5px;
             font-size: 18px;
             font-family: "Urbanist", sans-serif;
             font-weight: 700;
             color: #fff;
+            transition: 0.4s;
+            &:hover {
+               color: #e039fd;
+            }
             i {
                font-size: 16px;
                color: #6345ed;
@@ -512,6 +529,18 @@ i {
       }
       .text-box {
          margin-top: 15px;
+         .title {
+            display: block;
+            font-size: 18px;
+            margin-bottom: 5px;
+            font-family: "Urbanist", sans-serif;
+            font-weight: 700;
+            color: #fff;
+            transition: 0.4s;
+            &:hover {
+               color: #e039fd;
+            }
+         }
          .date-author {
             margin-bottom: 15px;
             span {
@@ -1032,16 +1061,20 @@ form.filter {
          }
       }
       .text-box {
-         a {
+         a.creator-name {
             margin-bottom: 0px;
             display: block;
             font-size: 18px;
             font-family: "Urbanist", sans-serif;
             font-weight: 700;
             color: #fff;
+            transition: 0.4s;
             i {
                font-size: 16px;
                color: #6345ed;
+            }
+            &:hover {
+               color: #e039fd;
             }
          }
          .btn-nft {
@@ -1104,6 +1137,14 @@ form.filter {
                height: 50px;
                border-radius: 10px;
                margin-right: 10px;
+            }
+            a.creator-name {
+               display: block;
+               color: #fff;
+               transition: 0.4s;
+               &:hover {
+                  color: #e039fd;
+               }
             }
             p {
                color: #fff;
@@ -1204,5 +1245,295 @@ form.filter {
    }
    .content.active {
       display: block;
+   }
+}
+
+// profile section
+.profile-section {
+   padding: 100px 0 50px 0;
+   .cover-wrapper {
+      position: relative;
+      padding: 50px;
+      background-color: rgba(100, 69, 237, 0.2);
+      border-radius: 20px;
+   }
+   .cover {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      border-radius: 20px;
+      display: none;
+   }
+   .about {
+      .profile {
+         width: 200px;
+         height: 200px;
+         border-radius: 10px;
+         margin-right: 15px;
+      }
+      .name {
+         i {
+            color: #6345ed;
+         }
+      }
+      .bio {
+         color: #fff;
+      }
+      .links {
+         a {
+            display: block;
+            color: #fff;
+            margin-bottom: 15px;
+            transition: 0.4s;
+            &:hover {
+               color: #e039fd;
+            }
+            &:last-child {
+               margin-bottom: 0;
+            }
+            i {
+               margin-right: 10px;
+               font-size: 16px;
+               color: #e039fd;
+            }
+         }
+      }
+   }
+   .right-wrapper {
+      position: relative;
+      height: 100%;
+      .button-group {
+         button {
+            background-color: rgba(100, 69, 237, 0.2);
+            padding: 14px 17px;
+            border-radius: 10px;
+            color: #fff;
+            i {
+               font-size: 16px;
+            }
+         }
+         .btn-nft {
+            height: 50.5px;
+            padding: 14px 0;
+            text-transform: capitalize;
+            color: #fff;
+            box-shadow: none;
+            i {
+               font-size: 16px;
+               position: relative;
+               top: 2px;
+            }
+         }
+         .user-id {
+            i {
+               margin-left: 5px;
+            }
+         }
+      }
+      .social-links {
+         margin-top: 15px;
+         float: right;
+         a {
+            color: #e039fd;
+            display: inline-block;
+            width: 45px;
+            height: 45px;
+            border-radius: 10px;
+            padding-top: 12px;
+            text-align: center;
+            background: rgba(100, 69, 237, 0.2);
+            transition: 0.4s;
+            i {
+               font-size: 16px;
+               transition: 0.4s;
+               &:hover {
+                  color: #e039fd;
+               }
+            }
+         }
+      }
+      .counts {
+         position: absolute;
+         bottom: 0;
+         display: flex;
+         width: 100%;
+         justify-content: space-between;
+         text-align: center;
+         .count {
+            span {
+               display: block;
+               color: #fff;
+            }
+         }
+      }
+   }
+}
+
+.author-artworks {
+   margin-bottom: 100px;
+   .navigator {
+      margin-bottom: 15px;
+      background: rgba(100, 69, 237, 0.2);
+      padding: 10px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      column-gap: 10px;
+      button {
+         color: #b2bac2;
+         padding: 10px 20px;
+         border-radius: 5px;
+         text-transform: capitalize;
+         transition: 0.3s;
+         &:hover,
+         &.active {
+            background: rgba(100, 69, 237, 0.2);
+            color: #e039fd;
+         }
+      }
+   }
+}
+
+// user panel
+.user-panel {
+   padding: 100px 0;
+   .sidebar-wrapper {
+      background: rgba(100, 69, 237, 0.2);
+      border-radius: 20px;
+      padding: 20px;
+      .cover {
+         width: 100%;
+         position: relative;
+         img {
+            border-radius: 10px;
+            height: 200px;
+            width: 100%;
+         }
+      }
+      .profile {
+         margin-top: -75px;
+         margin-left: 20px;
+         display: flex;
+         align-items: flex-end;
+         .img {
+            position: relative;
+            margin-right: 20px;
+            img {
+               border-radius: 10px;
+               height: 150px;
+               width: 150px;
+               border-radius: 10px;
+            }
+         }
+         h5 {
+            i {
+               font-size: 16px;
+               color: #6345ed;
+            }
+         }
+      }
+      .upload-img {
+         padding: 8px 12px;
+         border-radius: 5px;
+         position: absolute;
+         bottom: 10px;
+         right: 10px;
+         background: rgba(0, 0, 0, 0.8);
+         transition: 0.4s;
+         color: #b2bac2;
+         i {
+            font-size: 16px;
+         }
+         &:hover {
+            color: #e039fd;
+         }
+         input {
+            opacity: 0;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            cursor: pointer !important;
+         }
+      }
+      .sidebar {
+         margin-top: 20px;
+         padding: 20px;
+         a {
+            display: block;
+            color: #fff;
+            margin-bottom: 15px;
+            text-transform: capitalize;
+            transition: 0.4s;
+            &:last-child {
+               margin-bottom: 0;
+            }
+            &.active,
+            &:hover {
+               color: #e039fd;
+            }
+            i {
+               margin-right: 15px;
+               font-size: 16px;
+               position: relative;
+               top: 2px;
+            }
+         }
+      }
+   }
+   form {
+      .input-field {
+         label {
+            font-weight: 400;
+            margin-bottom: 10px;
+            text-transform: capitalize;
+            color: #fff;
+         }
+         .form-select,
+         .form-control {
+            height: 55px;
+            border-radius: 10px;
+            background-color: rgba(100, 69, 237, 0.2);
+            border: none;
+            padding: 15px;
+            font-size: 14px;
+            font-weight: normal;
+            caret-color: #e039fd;
+            color: #b2bac2;
+            &:focus {
+               color: #fff;
+               box-shadow: 0 0 0 0rem #fff;
+            }
+            &::placeholder {
+               color: #b2bac2;
+            }
+         }
+         .form-select {
+            background-image: url(../img/icon/downward-arrow.png);
+         }
+         option {
+            color: #000;
+            background: #fff;
+            transition: 0.3s;
+            &:hover {
+               background: #e039fd;
+               color: #fff;
+            }
+         }
+         textarea.form-control {
+            height: 150px;
+            border-radius: 10px;
+         }
+      }
+      .btn-nft {
+         box-shadow: none;
+         i {
+            position: relative;
+            top: 2px;
+         }
+      }
    }
 }
