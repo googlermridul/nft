@@ -2102,6 +2102,42 @@ form.filter .btn-nft i {
   border-bottom-right-radius: 5px;
 }
 
+.modal .modal-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.modal .modal-header i {
+  color: #b2bac2;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.modal .modal-header i:hover {
+  color: #e039fd;
+}
+
+.modal .modal-content {
+  background: #3c0f60;
+  color: #b2bac2;
+}
+
+.modal .modal-content .btn-nft {
+  padding: 15px 20px;
+  width: auto;
+  height: 50px;
+  text-transform: capitalize;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.modal .modal-content .btn-nft i {
+  font-size: 16px;
+}
+
+.modal .modal-footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
 @media (max-width: 991px) {
   .navbar {
     background: url(../img/body-bg2.png);

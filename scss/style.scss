@@ -1733,6 +1733,37 @@ form.filter {
    }
 }
 
+// modal
+.modal {
+   .modal-header {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+      i {
+         color: #b2bac2;
+         transition: 0.4s;
+         &:hover {
+            color: #e039fd;
+         }
+      }
+   }
+   .modal-content {
+      background: #3c0f60;
+      color: #b2bac2;
+      .btn-nft {
+         padding: 15px 20px;
+         width: auto;
+         height: 50px;
+         text-transform: capitalize;
+         box-shadow: none;
+         i {
+            font-size: 16px;
+         }
+      }
+   }
+   .modal-footer {
+      border-top: 1px solid rgba(0, 0, 0, 0.2);
+   }
+}
+
 @media (max-width: 991px) {
    .navbar {
       background: url(../img/body-bg2.png);
