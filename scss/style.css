@@ -44,6 +44,30 @@ body {
   font-size: 15px;
 }
 
+body.rtl {
+  direction: rtl;
+  overflow-x: hidden;
+}
+
+body.rtl .form-select {
+  background-position-x: 12px !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus input:-webkit-autofill,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #b2bac2;
+  -webkit-box-shadow: 0 0 0px 1000px rgba(100, 69, 237, 0.2) inset;
+          box-shadow: 0 0 0px 1000px rgba(100, 69, 237, 0.2) inset;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
 h1,
 h2,
 h3,
@@ -125,6 +149,11 @@ i {
 
 .btn-nft:hover {
   color: #fff;
+}
+
+.rtl .btn-nft i {
+  margin-right: 0;
+  margin-left: 10px;
 }
 
 .navbar {
@@ -545,6 +574,33 @@ i {
   bottom: 0;
 }
 
+.rtl .live-auction .nft-box .img-box .react i {
+  margin-right: 0;
+  margin-left: 5px;
+}
+
+.rtl .live-auction .nft-box .text-box .creator img {
+  margin-right: 0 !important;
+  margin-left: 10px;
+}
+
+.rtl .live-auction .nft-box .text-box .dot {
+  padding-left: 0;
+}
+
+.rtl .live-auction .nft-box .text-box .dropdown-menu .dropdown-item {
+  text-align: right;
+}
+
+.rtl .live-auction .nft-box .text-box .dropdown-menu .dropdown-item i {
+  margin-right: 0;
+  margin-left: 5px;
+}
+
+.rtl .live-auction .nft-box .text-box .text-end {
+  text-align: left !important;
+}
+
 .top-creator {
   padding: 100px 0;
 }
@@ -599,6 +655,11 @@ i {
 
 .top-creator .creator-box:hover {
   bottom: 10px;
+}
+
+.rtl .top-creator .creator-box .text-box {
+  margin-left: 0;
+  margin-right: 15px;
 }
 
 .how-it-works {
@@ -681,8 +742,14 @@ i {
           box-shadow: none;
 }
 
+.rtl .faq-section .accordion-button::after {
+  position: absolute;
+  left: 20px;
+}
+
 .testimonial-section {
   padding: 100px 0;
+  direction: ltr;
 }
 
 .testimonial-section .review-box {
@@ -768,6 +835,9 @@ i {
 
 .blog-section .box .text-box .date-author {
   margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .blog-section .box .text-box .date-author span {
@@ -800,6 +870,20 @@ i {
 
 .blog-section .box .text-box .read-more:hover {
   color: #e039fd;
+}
+
+.rtl .blog-section .box .text-box .read-more {
+  left: auto;
+}
+
+.rtl .blog-section .box .text-box .date-author span {
+  margin-right: 0;
+  margin-left: 30px;
+}
+
+.rtl .blog-section .box .text-box .date-author span i {
+  margin-right: 0;
+  margin-left: 5px;
 }
 
 .footer-section {
@@ -1118,15 +1202,10 @@ i {
 }
 
 .contact-section form .input-field option {
-  color: #000;
-  background: #fff;
+  background: #6345ed;
+  color: #fff;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-}
-
-.contact-section form .input-field option:hover {
-  background: #e039fd;
-  color: #fff;
 }
 
 .contact-section form .input-field textarea.form-control {
@@ -1142,6 +1221,11 @@ i {
 .contact-section form .btn-nft i {
   position: relative;
   top: 2px;
+}
+
+.rtl .contact-section .contact-box .icon-box {
+  margin-right: 0;
+  margin-left: 15px;
 }
 
 .blog-details {
@@ -1166,6 +1250,9 @@ i {
 
 .blog-details .blog-box .text-box .date-author {
   margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .blog-details .blog-box .text-box .date-author span {
@@ -1297,6 +1384,16 @@ i {
   font-size: 16px;
 }
 
+.rtl .blog-details .blog-box .text-box .date-author span {
+  margin-right: 0;
+  margin-left: 30px;
+}
+
+.rtl .blog-details .blog-box .text-box .date-author span i {
+  margin-right: 0;
+  margin-left: 5px;
+}
+
 .pagination {
   border-radius: 10px;
   overflow: hidden;
@@ -1326,6 +1423,10 @@ i {
 .pagination .page-link:focus {
   -webkit-box-shadow: 0 0 0 0rem rgba(13, 109, 253, 0.211);
           box-shadow: 0 0 0 0rem rgba(13, 109, 253, 0.211);
+}
+
+.rtl .pagination .page-item:first-child .page-link {
+  margin: 0;
 }
 
 form.filter {
@@ -1386,15 +1487,10 @@ form.filter .input-field .form-select {
 }
 
 form.filter .input-field option {
-  color: #000;
-  background: #fff;
+  background: #6345ed;
+  color: #fff;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-}
-
-form.filter .input-field option:hover {
-  background: #e039fd;
-  color: #fff;
 }
 
 form.filter .input-field textarea.form-control {
@@ -1488,6 +1584,12 @@ form.filter .btn-nft i {
 .nft-details .text-box .btn-group {
   margin-bottom: 30px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .nft-details .text-box .btn-group .react {
@@ -1564,6 +1666,12 @@ form.filter .btn-nft i {
 .nft-details .text-box .prices .box {
   padding: 10px 20px;
   border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .nft-details .text-box .btn-nft {
@@ -1614,9 +1722,9 @@ form.filter .btn-nft i {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .nft-details .content .box {
@@ -1661,15 +1769,31 @@ form.filter .btn-nft i {
 
 .nft-details .additional-info ul li {
   margin-bottom: 10px;
-}
-
-.nft-details .additional-info ul li span {
-  text-align: right;
-  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .nft-details .content.active {
   display: block;
+}
+
+.rtl .nft-details .text-box .btn-group .react i {
+  margin-right: 0;
+  margin-left: 5px;
+}
+
+.rtl .nft-details .text-box .owners .box img {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.rtl .nft-details .content .box img {
+  margin-right: 0;
+  margin-left: 10px;
 }
 
 .profile-section {
@@ -1736,6 +1860,10 @@ form.filter .btn-nft i {
   height: 100%;
 }
 
+.profile-section .right-wrapper .button-group {
+  text-align: right;
+}
+
 .profile-section .right-wrapper .button-group button {
   background-color: rgba(100, 69, 237, 0.2);
   padding: 14px 17px;
@@ -1768,6 +1896,7 @@ form.filter .btn-nft i {
 
 .profile-section .right-wrapper .social-links {
   margin-top: 15px;
+  text-align: right;
 }
 
 .profile-section .right-wrapper .social-links a {
@@ -1809,6 +1938,21 @@ form.filter .btn-nft i {
 .profile-section .right-wrapper .counts .count span {
   display: block;
   color: #fff;
+}
+
+.rtl .profile-section .about .profile {
+  margin-right: 0;
+  margin-left: 15px;
+}
+
+.rtl .profile-section .about .links a i {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.rtl .profile-section .right-wrapper .button-group,
+.rtl .profile-section .right-wrapper .social-links {
+  text-align: left;
 }
 
 .author-artworks {
@@ -1879,12 +2023,12 @@ form.filter .btn-nft i {
 .user-panel .sidebar-wrapper .profile .img {
   position: relative;
   margin-right: 20px;
+  height: 150px;
+  width: 150px;
 }
 
 .user-panel .sidebar-wrapper .profile .img img {
   border-radius: 10px;
-  height: 150px;
-  width: 150px;
   border-radius: 10px;
 }
 
@@ -1964,7 +2108,7 @@ form.filter .btn-nft i {
   border-radius: 10px;
   background-color: rgba(100, 69, 237, 0.2);
   border: none;
-  padding: 15px;
+  padding: 17px;
   font-size: 14px;
   font-weight: normal;
   caret-color: #e039fd;
@@ -2002,16 +2146,31 @@ form.filter .btn-nft i {
   background-image: url(../img/icon/downward-arrow.png);
 }
 
-.user-panel form .input-field option {
-  color: #000;
-  background: #fff;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+.user-panel form .input-field .attach-file {
+  position: relative;
 }
 
-.user-panel form .input-field option:hover {
-  background: #e039fd;
+.user-panel form .input-field .attach-file span.prev {
+  position: absolute;
+  left: 0px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 110px;
+  background: linear-gradient(79deg, #6345ed 0%, #e039fd 100%);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  text-align: center;
   color: #fff;
+  text-transform: capitalize;
+  padding: 16px;
+}
+
+.user-panel form .input-field option {
+  background: #6345ed;
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .user-panel form .input-field textarea.form-control {
@@ -2027,6 +2186,19 @@ form.filter .btn-nft i {
 .user-panel form .btn-nft i {
   position: relative;
   top: 2px;
+}
+
+.rtl .user-panel .sidebar-wrapper .profile {
+  margin-left: 0;
+}
+
+.rtl .user-panel .sidebar-wrapper .profile .img {
+  margin-left: 20px;
+}
+
+.rtl .user-panel .sidebar-wrapper .sidebar a i {
+  margin-right: 0;
+  margin-left: 15px;
 }
 
 .art-ranking {
@@ -2195,6 +2367,36 @@ form.filter .btn-nft i {
   }
   .home-section .overlay {
     background: rgba(0, 0, 0, 0.2);
+  }
+  .profile-section .cover-wrapper {
+    text-align: center;
+  }
+  .profile-section .cover-wrapper .about .profile {
+    margin: 0;
+    margin-bottom: 15px;
+  }
+  .profile-section .cover-wrapper .right-wrapper .button-group .btn-nft {
+    margin-top: 15px;
+  }
+  .profile-section .cover-wrapper .right-wrapper .button-group,
+  .profile-section .cover-wrapper .right-wrapper .social-links {
+    text-align: center;
+  }
+  .user-panel .sidebar-wrapper .profile {
+    display: block;
+    text-align: center;
+  }
+  .user-panel .sidebar-wrapper .profile .img {
+    margin: auto;
+    margin-bottom: 15px;
+    width: 120px;
+    height: 120px;
+  }
+  .user-panel .sidebar-wrapper .sidebar {
+    padding: 0;
+  }
+  .rtl .user-panel .sidebar-wrapper .profile .img {
+    margin-left: auto;
   }
 }
 

@@ -47,6 +47,28 @@ body {
    font-size: 15px;
 }
 
+body.rtl {
+   direction: rtl;
+   overflow-x: hidden;
+   .form-select {
+      background-position-x: 12px !important;
+   }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus input:-webkit-autofill,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+   //   border: 1px solid green;
+   -webkit-text-fill-color: #b2bac2;
+   box-shadow: 0 0 0px 1000px rgba(100, 69, 237, 0.2) inset;
+   transition: background-color 5000s ease-in-out 0s;
+}
+
 h1,
 h2,
 h3,
@@ -112,6 +134,13 @@ i {
    }
    &:hover {
       color: #fff;
+   }
+}
+
+.rtl .btn-nft {
+   i {
+      margin-right: 0;
+      margin-left: 10px;
    }
 }
 
@@ -487,6 +516,33 @@ i {
       }
    }
 }
+.rtl .live-auction {
+   .nft-box {
+      .img-box .react i {
+         margin-right: 0;
+         margin-left: 5px;
+      }
+      .text-box {
+         .creator img {
+            margin-right: 0 !important;
+            margin-left: 10px;
+         }
+         .dot {
+            padding-left: 0;
+         }
+         .dropdown-menu .dropdown-item {
+            text-align: right;
+            i {
+               margin-right: 0;
+               margin-left: 5px;
+            }
+         }
+         .text-end {
+            text-align: left !important;
+         }
+      }
+   }
+}
 
 // top creator
 .top-creator {
@@ -532,6 +588,12 @@ i {
       &:hover {
          bottom: 10px;
       }
+   }
+}
+.rtl .top-creator {
+   .creator-box .text-box {
+      margin-left: 0;
+      margin-right: 15px;
    }
 }
 
@@ -602,10 +664,15 @@ i {
       box-shadow: none;
    }
 }
+.rtl .faq-section .accordion-button::after {
+   position: absolute;
+   left: 20px;
+}
 
 // testimonial section
 .testimonial-section {
    padding: 100px 0;
+   direction: ltr;
    .review-box {
       background: rgba(100, 69, 237, 0.2);
       border-radius: 20px;
@@ -677,6 +744,7 @@ i {
          }
          .date-author {
             margin-bottom: 15px;
+            display: flex;
             span {
                margin-right: 30px;
                i {
@@ -703,6 +771,21 @@ i {
             &:hover {
                color: #e039fd;
             }
+         }
+      }
+   }
+}
+.rtl .blog-section {
+   .box .text-box {
+      .read-more {
+         left: auto;
+      }
+      .date-author span {
+         margin-right: 0;
+         margin-left: 30px;
+         i {
+            margin-right: 0;
+            margin-left: 5px;
          }
       }
    }
@@ -952,13 +1035,9 @@ i {
             background-image: url(../img/icon/downward-arrow.png);
          }
          option {
-            color: #000;
-            background: #fff;
+            background: #6345ed;
+            color: #fff;
             transition: 0.3s;
-            &:hover {
-               background: #e039fd;
-               color: #fff;
-            }
          }
          textarea.form-control {
             height: 150px;
@@ -971,6 +1050,14 @@ i {
             position: relative;
             top: 2px;
          }
+      }
+   }
+}
+.rtl .contact-section {
+   .contact-box {
+      .icon-box {
+         margin-right: 0;
+         margin-left: 15px;
       }
    }
 }
@@ -992,6 +1079,7 @@ i {
       .text-box {
          .date-author {
             margin-bottom: 15px;
+            display: flex;
             span {
                margin-right: 30px;
                i {
@@ -1086,6 +1174,18 @@ i {
       }
    }
 }
+.rtl .blog-details {
+   .blog-box .text-box {
+      .date-author span {
+         margin-right: 0;
+         margin-left: 30px;
+         i {
+            margin-right: 0;
+            margin-left: 5px;
+         }
+      }
+   }
+}
 
 // pagination
 .pagination {
@@ -1111,6 +1211,13 @@ i {
    }
    .page-link:focus {
       box-shadow: 0 0 0 0rem rgba(13, 109, 253, 0.211);
+   }
+}
+.rtl .pagination {
+   .page-item:first-child {
+      .page-link {
+         margin: 0;
+      }
    }
 }
 
@@ -1144,13 +1251,9 @@ form.filter {
          background-image: url(../img/icon/downward-arrow.png);
       }
       option {
-         color: #000;
-         background: #fff;
+         background: #6345ed;
+         color: #fff;
          transition: 0.3s;
-         &:hover {
-            background: #e039fd;
-            color: #fff;
-         }
       }
       textarea.form-control {
          height: 150px;
@@ -1236,6 +1339,8 @@ form.filter {
       .btn-group {
          margin-bottom: 30px;
          width: 100%;
+         display: flex;
+         justify-content: space-between;
          .react {
             background: rgba(100, 69, 237, 0.2);
             color: #fff;
@@ -1295,6 +1400,8 @@ form.filter {
          .box {
             padding: 10px 20px;
             border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
          }
       }
       .btn-nft {
@@ -1334,7 +1441,7 @@ form.filter {
          border-radius: 20px;
          display: flex;
          width: 100%;
-         align-items: center;
+         justify-content: space-between;
       }
       .box {
          display: flex;
@@ -1370,15 +1477,33 @@ form.filter {
          padding-left: 0;
          li {
             margin-bottom: 10px;
-            span {
-               text-align: right;
-               float: right;
-            }
+            display: flex;
+            justify-content: space-between;
          }
       }
    }
    .content.active {
       display: block;
+   }
+}
+.rtl .nft-details {
+   .text-box {
+      .btn-group {
+         .react {
+            i {
+               margin-right: 0;
+               margin-left: 5px;
+            }
+         }
+      }
+      .owners .box img {
+         margin-right: 0;
+         margin-left: 10px;
+      }
+   }
+   .content .box img {
+      margin-right: 0;
+      margin-left: 10px;
    }
 }
 
@@ -1440,6 +1565,7 @@ form.filter {
       position: relative;
       height: 100%;
       .button-group {
+         text-align: right;
          button {
             background-color: rgba(100, 69, 237, 0.2);
             padding: 14px 17px;
@@ -1469,7 +1595,7 @@ form.filter {
       }
       .social-links {
          margin-top: 15px;
-         // float: right;
+         text-align: right;
          a {
             color: #e039fd;
             display: inline-block;
@@ -1502,6 +1628,24 @@ form.filter {
                color: #fff;
             }
          }
+      }
+   }
+}
+.rtl .profile-section {
+   .about {
+      .profile {
+         margin-right: 0;
+         margin-left: 15px;
+      }
+      .links a i {
+         margin-right: 0;
+         margin-left: 10px;
+      }
+   }
+   .right-wrapper {
+      .button-group,
+      .social-links {
+         text-align: left;
       }
    }
 }
@@ -1555,10 +1699,10 @@ form.filter {
          .img {
             position: relative;
             margin-right: 20px;
+            height: 150px;
+            width: 150px;
             img {
                border-radius: 10px;
-               height: 150px;
-               width: 150px;
                border-radius: 10px;
             }
          }
@@ -1632,7 +1776,7 @@ form.filter {
             border-radius: 10px;
             background-color: rgba(100, 69, 237, 0.2);
             border: none;
-            padding: 15px;
+            padding: 17px;
             font-size: 14px;
             font-weight: normal;
             caret-color: #e039fd;
@@ -1648,14 +1792,28 @@ form.filter {
          .form-select {
             background-image: url(../img/icon/downward-arrow.png);
          }
-         option {
-            color: #000;
-            background: #fff;
-            transition: 0.3s;
-            &:hover {
-               background: #e039fd;
+         .attach-file {
+            position: relative;
+            span.prev {
+               position: absolute;
+               left: 0px;
+               top: 0;
+               bottom: 0;
+               margin: auto;
+               width: 110px;
+               background: linear-gradient(79deg, #6345ed 0%, #e039fd 100%);
+               border-top-left-radius: 5px;
+               border-bottom-left-radius: 5px;
+               text-align: center;
                color: #fff;
+               text-transform: capitalize;
+               padding: 16px;
             }
+         }
+         option {
+            background: #6345ed;
+            color: #fff;
+            transition: 0.3s;
          }
          textarea.form-control {
             height: 150px;
@@ -1668,6 +1826,21 @@ form.filter {
             position: relative;
             top: 2px;
          }
+      }
+   }
+}
+
+.rtl .user-panel {
+   .sidebar-wrapper {
+      .profile {
+         margin-left: 0;
+         .img {
+            margin-left: 20px;
+         }
+      }
+      .sidebar a i {
+         margin-right: 0;
+         margin-left: 15px;
       }
    }
 }
@@ -1823,6 +1996,44 @@ form.filter {
    }
    .home-section .overlay {
       background: rgba(0, 0, 0, 0.2);
+   }
+   .profile-section {
+      .cover-wrapper {
+         text-align: center;
+         .about .profile {
+            margin: 0;
+            margin-bottom: 15px;
+         }
+         .right-wrapper .button-group .btn-nft {
+            margin-top: 15px;
+         }
+         .right-wrapper {
+            .button-group,
+            .social-links {
+               text-align: center;
+            }
+         }
+      }
+   }
+   .user-panel {
+      .sidebar-wrapper {
+         .profile {
+            display: block;
+            text-align: center;
+            .img {
+               margin: auto;
+               margin-bottom: 15px;
+               width: 120px;
+               height: 120px;
+            }
+         }
+         .sidebar {
+            padding: 0;
+         }
+      }
+   }
+   .rtl .user-panel .sidebar-wrapper .profile .img {
+      margin-left: auto;
    }
 }
 @media (max-width: 575px) {

@@ -30,7 +30,7 @@
       <!-- custom css -->
       <link rel="stylesheet" href="./scss/style.css" />
    </head>
-   <body>
+   <body class="rl">
       <!-- navbar -->
       <nav class="navbar navbar-expand-lg fixed-top">
          <div class="container-fluid">
@@ -328,9 +328,18 @@
                               <option value="2">Auction</option>
                            </select>
                         </div>
-                        <div class="input-field col-md-6">
-                           <i class="fas fa-cloud-upload-alt"></i>
-                           drop your artwork
+                        <div class="input-field col-md-12">
+                           <!-- <i class="fas fa-cloud-upload-alt"></i>
+                           drop your artwork -->
+                           <label for="">upload artwork</label>
+                           <div class="attach-file">
+                              <span class="prev"> choose file </span>
+                              <input
+                                 class="form-control"
+                                 accept="image/*"
+                                 type="file"
+                              />
+                           </div>
                         </div>
                         <div class="input-field col-12">
                            <label for="">Item description</label>
@@ -419,13 +428,13 @@
                   </div>
                </div>
             </div>
-            <div class="row copyright">
-               <div class="col-md-6">
+            <div class="d-flex justify-content-between copyright">
+               <div>
                   <span>
                      All rights reserved © 2022 by<a href="">Bug Finder</a>
                   </span>
                </div>
-               <div class="col-md-6 text-end">
+               <div>
                   <a href="" class="language">Bengali</a>
                   <a href="" class="language">English</a>
                   <a href="" class="language">Spanish</a>
