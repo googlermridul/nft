@@ -47,9 +47,9 @@
                <i class="fal fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-               <ul class="navbar-nav mx-auto">
+               <ul class="navbar-nav mx-lg-auto">
                   <li class="nav-item">
-                     <a class="nav-link" href="index.html">Home</a>
+                     <a class="nav-link active" href="index.html">Home</a>
                   </li>
                   <li class="nav-item">
                      <a class="nav-link" href="about.html">about</a>
@@ -61,7 +61,7 @@
                      <a class="nav-link" href="creators.html">Creators</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link active" href="faq.html">FAQ</a>
+                     <a class="nav-link" href="faq.html">FAQ</a>
                   </li>
                   <li class="nav-item">
                      <a class="nav-link" href="blog.html">blog</a>
@@ -72,10 +72,13 @@
                </ul>
             </div>
             <span class="navbar-text">
-               <button class="search">
-                  <i class="fal fa-search"></i>
+               <button
+                  class="wallet btn-nft"
+                  data-bs-toggle="modal"
+                  data-bs-target="#connectWallet"
+               >
+                  <i class="fal fa-wallet"></i> <span>wallet</span>
                </button>
-
                <!-- notification panel -->
                <div class="notification-panel">
                   <button class="dropdown-toggle">
@@ -134,20 +137,9 @@
                      </div>
                   </ul>
                </div>
-               <button
-                  class="btn-nft"
-                  data-bs-toggle="modal"
-                  data-bs-target="#connectWallet"
-               >
-                  <i class="fal fa-wallet"></i><span>Connect wallet</span>
-               </button>
 
                <a href="user-panel.html" class="profile">
-                  <img
-                     src="./img/owner/creator1.jpg"
-                     class="img-fluid"
-                     alt=""
-                  />
+                  <img src="./img/owner/creator.jpg" class="img-fluid" alt="" />
                </a>
             </span>
          </div>

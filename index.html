@@ -30,7 +30,7 @@
       <!-- custom css -->
       <link rel="stylesheet" href="./scss/style.css" />
    </head>
-   <body class="">
+   <body class="rl">
       <!-- navbar -->
       <nav class="navbar navbar-expand-lg fixed-top">
          <div class="container-fluid">
@@ -72,10 +72,13 @@
                </ul>
             </div>
             <span class="navbar-text">
-               <button class="search">
-                  <i class="fal fa-search"></i>
+               <button
+                  class="wallet btn-nft"
+                  data-bs-toggle="modal"
+                  data-bs-target="#connectWallet"
+               >
+                  <i class="fal fa-wallet"></i> <span>wallet</span>
                </button>
-
                <!-- notification panel -->
                <div class="notification-panel">
                   <button class="dropdown-toggle">
@@ -134,20 +137,9 @@
                      </div>
                   </ul>
                </div>
-               <button
-                  class="btn-nft"
-                  data-bs-toggle="modal"
-                  data-bs-target="#connectWallet"
-               >
-                  <i class="fal fa-wallet"></i><span>Connect wallet</span>
-               </button>
 
                <a href="user-panel.html" class="profile">
-                  <img
-                     src="./img/owner/creator1.jpg"
-                     class="img-fluid"
-                     alt=""
-                  />
+                  <img src="./img/owner/creator.jpg" class="img-fluid" alt="" />
                </a>
             </span>
          </div>

@@ -147,20 +147,21 @@ i {
 // ------------------------------------------------------------------------------------------
 // HOME PAGE START
 // ------------------------------------------------------------------------------------------
+
 // navbar
 .navbar {
-   padding: 12px 15px;
+   padding: 0px 15px;
    .navbar-brand {
       font-family: "AweSomE JouRneY", sans-serif;
       font-size: 32px;
       color: #fff;
       display: inline-block;
-      width: 177px;
+      width: 248px;
    }
    .navbar-toggler {
       position: absolute;
       right: 15px;
-      top: 31px;
+      top: 34px;
       i {
          color: #fff;
          font-size: 24px;
@@ -185,144 +186,164 @@ i {
          }
       }
    }
-   .navbar-text {
-      .search {
-         background: none;
-         border: none;
-         position: relative;
-         // top: 5px;
-         // margin-right: 15px;
-         i {
-            font-size: 18px;
-            color: #fff;
-         }
-      }
-      .btn-nft {
-         width: 50px;
-         height: 50px;
-         padding: 14px 0;
-         padding-left: 10px;
-         text-transform: capitalize;
-         box-shadow: none;
-         span {
-            display: none;
-         }
-      }
-      .profile {
-         margin-left: 5px;
-         img {
-            width: 50px;
-            height: 50px;
-            border-radius: 100px;
-         }
-      }
-   }
    &.active {
       background: url(../img/body-bg2.png);
       background-size: cover;
       background-position: center top;
    }
-
-   .notification-panel {
+   // navbar text
+   .navbar-text {
       position: relative;
-      display: inline-block;
-      width: auto;
-      padding: 12px;
-      &:hover {
-         .notification-dropdown {
-            display: block;
-         }
-      }
-      .dropdown-toggle {
-         &::after {
-            display: none;
-         }
-         i {
-            color: #fff;
-            font-size: 20px;
-         }
-      }
-      .dropdown-box {
-         overflow-y: scroll;
-         width: 100%;
-         height: 100%;
-         &::-webkit-scrollbar {
-            width: 5px;
-            height: 100%;
-         }
-         &::-webkit-scrollbar-track {
-            background: rgba(59, 15, 96, 0.1);
+      right: 0;
+      padding: 0;
+      .profile {
+         margin-left: 5px;
+         position: relative;
+         top: -3px;
+         img {
+            width: 45px;
+            height: 45px;
             border-radius: 100px;
          }
-         &::-webkit-scrollbar-thumb {
-            background: rgba(100, 69, 237, 0.6);
-            border-radius: 6px;
-            &:hover {
+      }
+      .wallet {
+         width: 140px;
+         height: 45px;
+         text-transform: capitalize;
+         padding: 0;
+         position: relative;
+         top: -2px;
+         box-shadow: none;
+      }
+      .notification-panel {
+         position: relative;
+         display: inline-block;
+         width: auto;
+         padding: 20px 0;
+         margin-left: 5px;
+         &:hover {
+            .notification-dropdown {
+               display: block;
+            }
+         }
+         .dropdown-toggle {
+            background: none;
+            background: linear-gradient(79deg, #6345ed 0%, #e039fd 100%);
+            width: 45px;
+            height: 45px;
+            border-radius: 100px;
+            padding-top: 4px;
+            &::after {
+               display: none;
+            }
+            i {
+               color: #fff;
+            }
+         }
+         .dropdown-box {
+            overflow-y: scroll;
+            width: 100%;
+            height: 100%;
+            &::-webkit-scrollbar {
+               width: 3px;
+               height: 100%;
+            }
+            &::-webkit-scrollbar-track {
+               background: #3c0f60;
+               border-radius: 100px;
+            }
+            &::-webkit-scrollbar-thumb {
+               background: rgba(255, 255, 255, 0.05);
                background: #e039fd;
+               border-radius: 6px;
+               &:hover {
+                  background: #10ce8c;
+               }
+            }
+         }
+         .notification-dropdown {
+            background: #3c0f60;
+            width: 290px;
+            height: 324px;
+            overflow: hidden;
+            padding-bottom: 40px;
+            padding-top: 0px;
+            padding-left: 0;
+            position: absolute;
+            right: -60px;
+            top: 85px;
+            border-radius: 5px;
+            display: none;
+            li {
+               border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+               a {
+                  color: #b2bac2;
+                  padding: 10px 10px 15px 15px;
+                  display: flex;
+                  white-space: normal;
+                  transform: 0.4s;
+                  &:active,
+                  &:focus,
+                  &:hover {
+                     background: rgba(255, 255, 255, 0.05);
+                  }
+                  i {
+                     background: linear-gradient(
+                        79deg,
+                        #6345ed 0%,
+                        #e039fd 100%
+                     );
+                     border-radius: 100px;
+                     padding-top: 12px;
+                     width: 40px;
+                     height: 40px;
+                     text-align: center;
+                     margin-right: 10px;
+                     color: #fff;
+                  }
+                  p {
+                     margin-bottom: 0;
+                     color: #fff;
+                  }
+                  span {
+                     font-weight: 250;
+                  }
+               }
+            }
+            .clear-all {
+               color: #e039fd;
+               text-transform: uppercase;
+               border-top: 1px solid rgba(255, 255, 255, 0.05);
+               text-align: center;
+               font-size: 12px;
+               font-weight: 500;
+               padding: 10px 10px 6px 15px;
+               margin-bottom: 5px;
+               position: absolute;
+               bottom: 0;
+               left: 0;
+               a {
+                  color: #e039fd;
+               }
             }
          }
       }
-      .notification-dropdown {
-         background: #3c0f60;
-         width: 290px;
-         height: 324px;
-         overflow: hidden;
-         padding-bottom: 40px;
-         padding-top: 0px;
-         padding-left: 0;
-         position: absolute;
-         right: -104px;
-         top: 50px;
-         border-radius: 5px;
-         display: none;
-         li {
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-            a {
-               color: #b2bac2;
-               padding: 10px 10px 15px 15px;
-               display: flex;
-               white-space: normal;
-               &:active,
-               &:focus,
-               &:hover {
-                  background: none;
-               }
-               i {
-                  background: linear-gradient(79deg, #6345ed 0%, #e039fd 100%);
-                  border-radius: 100px;
-                  padding: 10px;
-                  width: 40px;
-                  height: 40px;
-                  text-align: center;
-                  margin-right: 10px;
-                  color: #fff;
-               }
-               p {
-                  margin-bottom: 0;
-                  color: #fff;
-               }
-               span {
-                  font-weight: 250;
-               }
-            }
+   }
+}
+.rtl .navbar {
+   .navbar-text {
+      right: 0;
+      left: 30px;
+      .notification-panel .notification-dropdown {
+         right: auto;
+         left: -60px;
+         li a i {
+            margin-right: 0;
+            margin-left: 10px;
          }
-         .clear-all {
-            background: #3c0f60;
-            color: #e039fd;
-            text-transform: uppercase;
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
-            text-align: center;
-            font-size: 13px;
-            font-weight: 400;
-            padding: 10px 10px 6px 15px;
-            margin-bottom: 5px;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            a {
-               color: #e039fd;
-            }
-         }
+      }
+      .profile {
+         margin-left: 0;
       }
    }
 }
@@ -1942,13 +1963,61 @@ form.filter {
       background: url(../img/body-bg2.png);
       background-size: cover;
       background-position: center top;
+      padding: 15px 0px;
       .nav-item {
          text-align: center;
       }
       .navbar-text {
          position: absolute;
+         top: 0px;
          right: 50px;
-         top: 11px;
+         .btn-ico {
+            width: 45px;
+            height: 45px;
+            padding-left: 5px;
+            text-align: center;
+            box-shadow: none;
+            span {
+               display: none;
+            }
+         }
+         .profile img {
+            width: 45px;
+            height: 45px;
+            position: relative;
+            top: 0px;
+         }
+         .search i {
+            font-size: 20px;
+         }
+         .wallet,
+         .notification-panel,
+         .profile {
+            margin-left: 0;
+         }
+         .wallet {
+            width: 45px;
+            padding-top: 5px;
+            position: relative;
+            top: 0px;
+            span {
+               display: none;
+            }
+            i {
+               margin: 0;
+            }
+         }
+      }
+   }
+   .rtl .navbar {
+      .navbar-brand {
+         margin-right: 40px;
+      }
+      .navbar-text {
+         position: absolute;
+         top: 2px;
+         right: auto !important;
+         left: 15px !important;
       }
    }
    .profile-section .cover-wrapper {
@@ -1969,30 +2038,6 @@ form.filter {
    }
    h2 {
       font-size: 36px;
-   }
-   .navbar {
-      padding: 12px 0px;
-      .navbar-text {
-         .btn-nft {
-            width: 45px;
-            height: 45px;
-            padding-left: 10px;
-            text-align: center;
-            box-shadow: none;
-            span {
-               display: none;
-            }
-         }
-         .profile img {
-            width: 45px;
-            height: 45px;
-            position: relative;
-            top: -2px;
-         }
-         .search i {
-            font-size: 20px;
-         }
-      }
    }
    .home-section .overlay {
       background: rgba(0, 0, 0, 0.2);
